@@ -2,16 +2,15 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="normalize.css">
+  <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
-  <title>Sedona</title>
+  <title>Гостиницы Седоны</title>
 </head>
 
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <a class="logo">
+      <a href="index.html" class="logo">
         <svg width="139" height="70" viewBox="0 0 139 70" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M139 0H0L59.9312 65.6531C65.1688 71.449 73.8312 71.449 79.0688 65.6531L139 0Z" fill="#81B3D3" />
           <path d="M36.804 0.49745L68.9951 38.2042L101.086 0.696431L36.804 0.49745Z" fill="#23A9E1" />
@@ -38,13 +37,13 @@
       </a>
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--current">Главная</a>
+          <a href="index.html" class="navigation__link">Главная</a>
         </li>
         <li class="navigation__item">
           <a href="#" class="navigation__link">О Седоне</a>
         </li>
         <li class="navigation__item">
-          <a href="catalog.html" class="navigation__link">Гостиницы</a>
+          <a class="navigation__link navigation__link--current">Гостиницы</a>
         </li>
       </ul>
     </nav>
@@ -54,69 +53,159 @@
       <a href="#" class="actions__get btn">Хочу сюда!</a>
     </div>
   </header>
-  <main>
-    <h1 class="welcome">
-      <span class="visually-hidden">Добро пожаловать в Седону!</span>
-    </h1>
-    <section class="features">
-      <div class="features__text">
-        <h2 class="features__heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="features__title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-      </div>
-      <ol class="features__list">
-        <li class="features__item features__item--one">
-          <div class="wrapper">
-            <div class="features__item-text">
-              <h3 class="features__item-heading">Настоящий городок</h3>
-              <p class="features__item-description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-            </div>
-            <div class="features__item-image">
-              <img src="" alt="Дома с зеленью и цветами на фоне гор">
-            </div>
-          </div>
-          <ul class="advantages">
-            <li class="advantages__item advantages__item--home">
-              <h4 class="advantages__item-heading">Жильё</h4>
-              <p class="advantages__item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </li>
-            <li class="advantages__item advantages__item--food">
-              <h4 class="advantages__item-heading">Еда</h4>
-              <p class="advantages__item-description">Всегда заказывайте топовый бургер, вы не разочаруетесь!</p>
-            </li>
-            <li class="advantages__item advantages__item--souvenirs">
-              <h4 class="advantages__item-heading">Сувениры</h4>
-              <p class="advantages__item-description">Не только китайского, но и настоящего местного производства!</p>
-            </li>
-          </ul>
+  <main class="catalog">
+    <section class="hotels-search">
+      <h1 class="hotels-search__heading">Гостиницы Седоны</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="breabsrumbs__link breabsrumbs__link--index"><span
+              class="visually-hidden">Главная</span></a>
         </li>
-        <li class="features__item features__item--two">
-          <div class="features__item-text">
-            <h3 class="features__item-heading">Там есть мост дьявола</h3>
-            <p class="features__item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-          </div>
-          <div class="features__item-image">
-            <img src="" alt="Мост на фоне расщелины в горах">
-          </div>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link">Гостиницы</a>
         </li>
-        <li class="features__item features__item--three">
-          <h3 class="features__item-heading">Небольшая площадь</h3>
-          <p class="features__item-description">Все достопримечательности находятся очень близко</p>
-        </li>
-        <li class="features__item features__item--four">
-          <h3 class="features__item-heading">Красивая дорога</h3>
-          <p class="features__item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-        <li class="features__item features__item--five">
-          <h3 class="features__item-heading">Мало туристов</h3>
-          <p class="features__item-description">Большинство едет в Гранд Каньон и толпится там</p>
-        </li>
-      </ol>
+      </ul>
+      <form action="https://echo.htmlacademy.ru/" class="catalog__search-form" method="post">
+        <fieldset class="infrastructure">
+          <legend class="infrastructure__heading">Инфраструктура:</legend>
+          <label>
+            <input type="checkbox" name="infrastructure" value="pool" class="infrastructure__input" checked>Бассейн
+          </label>
+          <label>
+            <input type="checkbox" name="infrastructure" value="parking" infrastructure__input checked>Парковка
+          </label>
+          <label>
+            <input type="checkbox" name="infrastructure" value="Wi-Fi" infrastructure__input>Wi-Fi
+          </label>
+        </fieldset>
+        <fieldset class="house-type">
+          <legend class="house-type__heading">Тип жилья:</legend>
+          <label>
+            <input type="radio" name="house-type" value="hotel" class="house-type__input" checked>Гостиница
+          </label>
+          <label>
+            <input type="radio" name="house-type" value="motel" class="house-type__input">Мотель
+          </label>
+          <label>
+            <input type="radio" name="house-type" value="apartments" class="house-type__input">Апартаменты
+          </label>
+        </fieldset>
+        <fieldset class="price">
+          <legend class="price__heading">Стоимость, <span>&#8381;</span></legend>
+          <input type="text" value="0" class="price__input price__input--min">
+          <input type="text" value="9000" class="price__input price__input--max">
+          <input type="range" class="price__input-range">
+        </fieldset>
+        <input type="submit" value="Применить" class="catalog__search-form-send">
+        <button type="button" class="catalog__search-form-reset">Сбросить</button>
+      </form>
     </section>
-    <section class="search">
-      <h3 class="search__heading">Заинтересовались?</h3>
-      <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
-        в Седоне</p>
-      <a href="#" class="search__link">Поиск гостиницы в Седоне</a>
+    <section class="sorting">
+      <header class="sorting__header">
+        <h2 class="sorting__heading">Найдено гостиниц: 38</h2>
+        <form action="https://echo.htmlacademy.ru/" class="sorting__form" method="post">
+          <select name="sort">
+            <option value="cheap" selected>Сначала дешёвые</option>
+            <option value="expensive">Сначала подороже</option>
+          </select>
+          <input type="submit" value="Сортировать" class="visually-hidden">
+        </form>
+        <div class="sorting__toggles">
+          <button type="button" class="sorting__toggles-card"></button>
+          <button type="button" class="sorting__toggles-panel"></button>
+          <button type="button" class="sorting__toggles-custom"></button>
+        </div>
+      </header>
+      <div class="sorting__results">
+        <ol class="sorting__results-list">
+          <li class="sorting__results-item">
+            <a href="" class="sorting__results-img">
+              <img src="" alt="Отель в горах">
+            </a>
+            <h3 class="sorting__results-heading">Amara Resort & Span</h3>
+            <span class="sorting__results-type">Гостиница</span>
+            <span class="sorting__results-price">От 4000 &#x20bd;</span>
+            <a href="#" class="sorting__results-about">Подробнее</a>
+            <a href="#" class="sorting__results-bookmark">В избранное</a>
+            <div class="rating">
+              <span class="rating__stars">123</span>
+              <a href="" class="rating__value">Рейтинг 8,5</a>
+            </div>
+          </li>
+          <li class="sorting__results-item">
+            <a href="" class="sorting__results-img">
+              <img src="" alt="Отель на равнине недалеко от гор">
+            </a>
+            <h3 class="sorting__results-heading">Desert Quail Inn</h3>
+            <span class="sorting__results-type">Гостиница</span>
+            <span class="sorting__results-price">От 3000 &#x20bd;</span>
+            <a href="#" class="sorting__results-about">Подробнее</a>
+            <a href="#" class="sorting__results-bookmark">В избранное</a>
+            <div class="rating">
+              <span class="rating__stars">123</span>
+              <a href="" class="rating__value">Рейтинг 8,9</a>
+            </div>
+          </li>
+          <li class="sorting__results-item">
+            <a href="" class="sorting__results-img">
+              <img src="" alt="Отель в горах">
+            </a>
+            <h3 class="sorting__results-heading">Villas at Poco Diablo</h3>
+            <span class="sorting__results-type">Гостиница</span>
+            <span class="sorting__results-price">От 2000 &#x20bd;</span>
+            <a href="#" class="sorting__results-about">Подробнее</a>
+            <a href="#" class="sorting__results-bookmark  sorting__results-bookmark--active">В избранном</a>
+            <div class="rating">
+              <span class="rating__stars">123</span>
+              <a href="" class="rating__value">Рейтинг 9,2</a>
+            </div>
+          </li>
+          <li class="sorting__results-item">
+            <a href="" class="sorting__results-img">
+              <img src="" alt="Отель в лесу">
+            </a>
+            <h3 class="sorting__results-heading">GreenTree Inn</h3>
+            <span class="sorting__results-type">Гостиница</span>
+            <span class="sorting__results-price">От 3000 &#x20bd;</span>
+            <a href="#" class="sorting__results-about">Подробнее</a>
+            <a href="#" class="sorting__results-bookmark">В избранное</a>
+            <div class="rating">
+              <span class="rating__stars">123</span>
+              <a href="" class="rating__value">Рейтинг 9,2</a>
+            </div>
+          </li>
+        </ol>
+        <a href="#" class="sorting__results-more">Загрузить еще</a>
+        <ol class="pagination">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--current">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--current">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--current">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--current">4</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--current">...</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--current">10</a>
+          </li>
+        </ol>
+        <div class="how-much-render">
+          <span class="how-much-render__text">Гостиниц на странице:</span>
+          <select name="how-much-render__value">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4" selected>4</option>
+          </select>
+        </div>
+      </div>
     </section>
     <section class="subscribe">
       <h2 class="subscribe__heading">Подпишитесь на рассылку</h2>
