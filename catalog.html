@@ -2,15 +2,16 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
-  <title>Гостиницы Седоны</title>
+  <title>Sedona</title>
 </head>
 
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <a href="index.html" class="logo">
+      <a class="logo">
         <svg width="139" height="70" viewBox="0 0 139 70" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M139 0H0L59.9312 65.6531C65.1688 71.449 73.8312 71.449 79.0688 65.6531L139 0Z" fill="#81B3D3" />
           <path d="M36.804 0.49745L68.9951 38.2042L101.086 0.696431L36.804 0.49745Z" fill="#23A9E1" />
@@ -37,13 +38,13 @@
       </a>
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a href="index.html" class="navigation__link">Главная</a>
+          <a class="navigation__link navigation__link--current">Главная</a>
         </li>
         <li class="navigation__item">
           <a href="#" class="navigation__link">О Седоне</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--current">Гостиницы</a>
+          <a href="catalog.html" class="navigation__link">Гостиницы</a>
         </li>
       </ul>
     </nav>
@@ -53,131 +54,96 @@
       <a href="#" class="actions__get btn">Хочу сюда!</a>
     </div>
   </header>
-  <main class="catalog">
-    <section class="hotels">
-      <h1 class="catalog__heading">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a class="breabsrumbs__link breabsrumbs__link--index"><span class="visually-hidden">Главная</span></a>
+  <main>
+    <h1 class="welcome">
+      <span class="visually-hidden">Добро пожаловать в Седону!</span>
+    </h1>
+    <section class="features">
+      <div class="features__text">
+        <h2 class="features__heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="features__title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
+      <ol class="features__list">
+        <li class="features__item features__item--one">
+          <div class="wrapper">
+            <div class="features__item-text">
+              <h3 class="features__item-heading">Настоящий городок</h3>
+              <p class="features__item-description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <div class="features__item-image">
+              <img src="" alt="Дома с зеленью и цветами на фоне гор">
+            </div>
+          </div>
+          <ul class="advantages">
+            <li class="advantages__item advantages__item--home">
+              <h4 class="advantages__item-heading">Жильё</h4>
+              <p class="advantages__item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
+            <li class="advantages__item advantages__item--food">
+              <h4 class="advantages__item-heading">Еда</h4>
+              <p class="advantages__item-description">Всегда заказывайте топовый бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="advantages__item advantages__item--souvenirs">
+              <h4 class="advantages__item-heading">Сувениры</h4>
+              <p class="advantages__item-description">Не только китайского, но и настоящего местного производства!</p>
+            </li>
+          </ul>
         </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link breabsrumbs__link--hotels">Гостиницы</a>
+        <li class="features__item features__item--two">
+          <div class="features__item-text">
+            <h3 class="features__item-heading">Там есть мост дьявола</h3>
+            <p class="features__item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </div>
+          <div class="features__item-image">
+            <img src="" alt="Мост на фоне расщелины в горах">
+          </div>
         </li>
-      </ul>
-      <form action="https://echo.htmlacademy.ru/" class="catalog__form" method="post">
-        <fieldset class="infrastructure">
-          <legend class="infrastructure__heading">Инфраструктура:</legend>
-          <label>
-            <input type="checkbox" name="infrastructure" value="pool" checked>Бассейн
-          </label>
-          <label>
-            <input type="checkbox" name="infrastructure" value="parking" checked>Парковка
-          </label>
-          <label>
-            <input type="checkbox" name="infrastructure" value="Wi-Fi">Wi-Fi
-          </label>
-        </fieldset>
-        <fieldset class="house-type">
-          <legend class="house-type__heading">Тип жилья:</legend>
-          <label>
-            <input type="radio" name="house-type" value="hotel" checked>Гостиница
-          </label>
-          <label>
-            <input type="radio" name="house-type" value="motel">Мотель
-          </label>
-          <label>
-            <input type="radio" name="house-type" value="apartments">Апартаменты
-          </label>
-        </fieldset>
-        <fieldset class="price">
-          <legend class="price__heading">Стоимость, <span>&#8381;</span></legend>
-          <input type="text" value="0">
-          <input type="text" value="9000">
-          <input type="range">
-        </fieldset>
-        <input type="submit" value="Применить">
-        <button type="button" class="reset">Сбросить</button>
-      </form>
+        <li class="features__item features__item--three">
+          <h3 class="features__item-heading">Небольшая площадь</h3>
+          <p class="features__item-description">Все достопримечательности находятся очень близко</p>
+        </li>
+        <li class="features__item features__item--four">
+          <h3 class="features__item-heading">Красивая дорога</h3>
+          <p class="features__item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+        <li class="features__item features__item--five">
+          <h3 class="features__item-heading">Мало туристов</h3>
+          <p class="features__item-description">Большинство едет в Гранд Каньон и толпится там</p>
+        </li>
+      </ol>
     </section>
-    <section class="results">
-      <h2 class="results__heading">Найдено гостиниц: 38</h2>
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <select name="sort">
-          <option value="cheap" selected>Сначала дешёвые</option>
-          <option value="expensive">Сначала подороже</option>
-        </select>
-        <input type="submit" value="Сортировать" class="visually-hidden">
-      </form>
-      <div class="controls">
-        <a href="" class="controls__item"></a>
-      </div>
+    <section class="search">
+      <h3 class="search__heading">Заинтересовались?</h3>
+      <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+        в Седоне</p>
+      <a href="#" class="search__link">Поиск гостиницы в Седоне</a>
     </section>
-    <section class="results">
-      <h2 class="results__heading">Найдено гостиниц: 38</h2>
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <select name="sort">
-          <option value="cheap" selected>Сначала дешёвые</option>
-          <option value="expensive">Сначала подороже</option>
-        </select>
-        <input type="submit" value="Сортировать" class="visually-hidden">
+    <section class="subscribe">
+      <h2 class="subscribe__heading">Подпишитесь на рассылку</h2>
+      <p class="subscribe__description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form action="https://echo.htmlacademy.ru/" class="subscribe-form" method="post">
+        <label>
+          <input type="email" name="email" class="subscribe-form__email">Ваш e-mail
+        </label>
+        <input type="button" value="Подписаться" class="subscribe-form__btn">
       </form>
-      <div class="controls">
-        <a href="" class="controls__item"></a>
-      </div>
-    </section>
-    <section class="results">
-      <h2 class="results__heading">Найдено гостиниц: 38</h2>
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <select name="sort">
-          <option value="cheap" selected>Сначала дешёвые</option>
-          <option value="expensive">Сначала подороже</option>
-        </select>
-        <input type="submit" value="Сортировать" class="visually-hidden">
-      </form>
-      <div class="controls">
-        <a href="" class="controls__item"></a>
-      </div>
-    </section>
-    <section class="results">
-      <h2 class="results__heading">Найдено гостиниц: 38</h2>
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <select name="sort">
-          <option value="cheap" selected>Сначала дешёвые</option>
-          <option value="expensive">Сначала подороже</option>
-        </select>
-        <input type="submit" value="Сортировать" class="visually-hidden">
-      </form>
-      <div class="controls">
-        <a href="" class="controls__item"></a>
-      </div>
-    </section>
-    <section class="results">
-      <h2 class="results__heading">Найдено гостиниц: 38</h2>
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <select name="sort">
-          <option value="cheap" selected>Сначала дешёвые</option>
-          <option value="expensive">Сначала подороже</option>
-        </select>
-        <input type="submit" value="Сортировать" class="visually-hidden">
-      </form>
-      <div class="controls">
-        <a href="" class="controls__item"></a>
-      </div>
-    </section>
-    <section class="results">
-      <h2 class="results__heading">Найдено гостиниц: 38</h2>
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <select name="sort">
-          <option value="cheap" selected>Сначала дешёвые</option>
-          <option value="expensive">Сначала подороже</option>
-        </select>
-        <input type="submit" value="Сортировать" class="visually-hidden">
-      </form>
-      <div class="controls">
-        <a href="" class="controls__item"></a>
-      </div>
     </section>
   </main>
+  <footer class="page-footer">
+    <ul class="social">
+      <li class="social__item">
+        <a href="#" class="social__link social__link--twitter"><span class="visually-hidden">Twitter</span></a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link social__link--facebook"><span class="visually-hidden">Facebook</span></a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link social__link--youtube"><span class="visually-hidden">Youtube</span></a>
+      </li>
+    </ul>
+    <a href="tel:+78128121212" class="phone">+7 (812) 812-12-12</a>
+    <a href="#" class="page-footer__logo"><span class="visually-hidden">HTML Academy</span></a>
+  </footer>
 </body>
 
 </html>
