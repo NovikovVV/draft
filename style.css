@@ -133,3 +133,9 @@ body {
 .catalog__heading {
   margin: 0;
 }
+
+.pagination,
+.features__list,
+.sorting__results-list {
+  list-style: none;
+}
