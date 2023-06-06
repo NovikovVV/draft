@@ -124,8 +124,8 @@ body {
 .page-header__search-item:active {
   background: #F8E6BE;
   color: #1B1F2B;
-  ;
 }
+
 .pick-tour {
   padding: 135px 0;
 }
@@ -158,7 +158,6 @@ body {
   position: relative;
 }
 
-/* горжусь этим селектором! */
 .pick-tour__sort-link[href]:hover::after {
   position: absolute;
   content: "";
@@ -202,7 +201,7 @@ body {
   position: relative;
 }
 
-.pick-tour__list-card { 
+.pick-tour__list-card {
   display: block;
   height: 100%;
   padding: 51px 90px 49px 51px;
@@ -250,23 +249,23 @@ body {
 }
 
 .pick-tour__list-item--desert {
-  background-image:linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url(img/card\ tour\ photo-2.jpg);
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url(img/card\ tour\ photo-2.jpg);
 }
 
 .pick-tour__list-item--rocks {
-  background-image:linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url(img/card\ tour\ photo-3.jpg);
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url(img/card\ tour\ photo-3.jpg);
 }
 
 .pick-tour__list-item--city {
-  background-image:linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url(img/card\ tour\ photo-4.jpg);
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url(img/card\ tour\ photo-4.jpg);
 }
 
 .pick-tour__list-item--beach {
-  background-image:linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url(img/card\ tour\ photo-5.jpg);
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url(img/card\ tour\ photo-5.jpg);
 }
 
 .pick-tour__list-item--mountains {
-  background-image:linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url(img/card\ tour\ photo-6.jpg);
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url(img/card\ tour\ photo-6.jpg);
 }
 
 .build-tour__description {
