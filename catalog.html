@@ -3,15 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Гостиницы Седоны</title>
 </head>
 
-<body>
+<body class="page-catalog">
   <header class="page-header">
     <nav class="navigation">
-      <a href="index.html" class="logo">
+      <a class="logo">
         <svg width="139" height="70" viewBox="0 0 139 70" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M139 0H0L59.9312 65.6531C65.1688 71.449 73.8312 71.449 79.0688 65.6531L139 0Z" fill="#81B3D3" />
           <path d="M36.804 0.49745L68.9951 38.2042L101.086 0.696431L36.804 0.49745Z" fill="#23A9E1" />
@@ -47,12 +46,16 @@
           <a class="navigation__link navigation__link--current">Гостиницы</a>
         </li>
       </ul>
+      <div class="actions">
+        <a href="#" class="actions__search">
+          <span class="visually-hidden">Поиск</span>
+        </a>
+        <a href="#" class="actions__like">
+          <span class="visually-hidden">Лайки</span>
+        </a>
+        <a href="#" class="actions__get btn">Хочу сюда!</a>
+      </div>
     </nav>
-    <div class="actions">
-      <a href="#" class="actions__search">Поиск</a>
-      <a href="#" class="actions__like">Лайки</a>
-      <a href="#" class="actions__get btn">Хочу сюда!</a>
-    </div>
   </header>
   <main class="catalog">
     <section class="hotels-search">
@@ -99,7 +102,7 @@
           <input type="range" class="price__input-range">
         </fieldset>
         <input type="submit" value="Применить" class="catalog__search-form-send">
-        <input type="reset" class="catalog__search-form-reset">Сбросить</button>
+        <input type="reset" value="Сбросить" class="catalog__search-form-reset">
       </form>
     </section>
     <section class="sorting">
