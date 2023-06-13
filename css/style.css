@@ -484,9 +484,16 @@ body {
   padding-top: 2px;
 }
 
+.hotels-search__heading {
+  margin: 0;
+}
+
+.page-catalog .navigation {
+  background: url(../img/catalog-header-bg.jpg) bottom repeat-x;
+}
+
 .hotels-search {
-  background: url(../img/catalog_bg.jpg);
-  background-size: cover;
+  background: url(../img/catalog_bg.jpg) 0 -5px no-repeat;
 }
 
 .hotels-search__heading {
@@ -557,7 +564,37 @@ select {
   line-height: 23px;
 }
 
+.sorting__results-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.sorting__results-item {
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  width: 340px;
+  min-height: 438px;
+  padding: 20px;
+  ;
+}
+
+.sorting__results-img {
+  width: 100%;
+  height: 206px;
+  margin-bottom: 16px;
+}
+
 .sorting__results-heading {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 16px;
+
   font-size: 24px;
   font-weight: 700;
   line-height: 31px;
@@ -565,15 +602,32 @@ select {
 
 .sorting__results-type,
 .sorting__results-price {
+  margin-bottom: 16px;
+
   font-size: 18px;
   line-height: 23px;
 }
 
+.sorting__results-type {
+  width: 133px;
+}
+
+.sorting__results-price {
+  width: 143px;
+  margin-left: auto;
+}
+
 .sorting__results-about {
+  width: 133px;
+  margin-bottom: 16px;
+  padding: 8.5px 10px 8.5px;
+
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 
   color: #ffffff;
+  border-radius: 4px;
   background-color: #756257;
 
   font-size: 16px;
@@ -582,10 +636,17 @@ select {
 }
 
 .sorting__results-bookmark {
+  width: 141px;
+  margin-bottom: 16px;
+  margin-left: auto;
+  padding: 8.5px 10px 8.5px;
+
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 
   color: #ffffff;
+  border-radius: 4px;
   background-color: #83B3D3;
 
   font-size: 16px;
@@ -593,10 +654,28 @@ select {
   line-height: 21px;
 }
 
+.sorting__results-bookmark--active {
+  background-color: #7DB54F;
+}
+
+.rating__stars {
+  display: inline-block;
+
+  width: 140px;
+  height: 37px;
+
+  border: 1px solid red;
+}
+
 .rating__value {
+  width: 160px;
+  padding: 8.5px 10px 8.5px;
+
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 
+  border-radius: 4px;
   background-color: #F2F2F2;
 
   font-size: 16px;
