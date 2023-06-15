@@ -489,7 +489,7 @@ body {
 }
 
 .hotels-search {
-  padding: 35px 72px 83px 71px;
+  padding: 30px 72px 83px 71px;
 
   background: url(../img/catalog_bg.jpg) 0 -5px no-repeat;
 }
@@ -506,6 +506,7 @@ body {
 
 .breadcrumbs {
   margin: 0;
+  margin-bottom: 33px;
   padding: 0;
 
   list-style: none;
@@ -543,6 +544,14 @@ fieldset {
   width: 200px;
 }
 
+.infrastructure {
+  margin-right: 17px;
+}
+
+.house-type {
+  margin-right: 112px;
+}
+
 .catalog__search-form legend {
   padding: 0;
 
@@ -559,12 +568,12 @@ fieldset {
 }
 
 .price__heading {
-  margin-bottom: 34px;
+  margin-bottom: 36px;
 }
 
 .price__input {
   width: 143.5px;
-  padding: 14px 14px 13px 19px;
+  padding: 15px 14px 8px 17px;
 
   color: #ffffff;
   border: 1px solid white;
@@ -590,7 +599,8 @@ fieldset {
 .catalog__search-form-buttons {
   align-self: flex-end;
 
-  width: 220px;
+  width: 160px;
+  margin-left: auto;
 
   text-align: center;
 }
@@ -605,9 +615,10 @@ fieldset {
 }
 
 .catalog__search-form-send {
-  margin-bottom: 5px;
-  padding: 10px 20px 8px;
+  width: 160px;
+  padding: 12px 20px 12px;
 
+  text-align: center;
   text-transform: uppercase;
 
   border-radius: 4px;
