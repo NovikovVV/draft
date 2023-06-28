@@ -29,8 +29,6 @@ html {
 body {
   margin: 0;
 
-  color: #000000;
-
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -38,22 +36,29 @@ body {
 }
 
 .navigation {
+  position: relative;
+  z-index: 1;
+
   display: flex;
   flex-wrap: wrap;
 
   width: 1200px;
   margin: 0 auto;
-  padding: 0 70px;
+  padding: 0 70px 0 169px;
 }
 
-.logo {
+.navigation__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+
   width: 139px;
   height: 70px;
-  margin-right: 30px;
 }
 
-.page-index .navigation {
-  background: url(../img/header-bg.png) bottom repeat-x;
+.navigation__logo:focus {
+  border-radius: 4px;
+  outline: 3px solid #83B3D3;
 }
 
 .navigation__list {
@@ -62,6 +67,7 @@ body {
 
   max-width: 600px;
   margin: 0;
+  margin-right: auto;
   padding: 0;
 
   list-style: none;
@@ -71,16 +77,14 @@ body {
   padding: 0 17px;
 }
 
-.navigation__link--current {
-  border-bottom: 2px solid #756257;
-}
-
-
 .navigation__link {
+  position: relative;
+
   display: block;
 
-  padding: 20px 0 18px 0;
+  padding: 20px 0;
 
+  text-align: center;
   text-decoration: none;
 
   color: #000000;
@@ -88,53 +92,58 @@ body {
   font-weight: 700;
 }
 
+.navigation__link--current::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  height: 2px;
+
+  content: "";
+
+  background-color: #756257;
+}
+
 .navigation__link[href]:hover {
   color: #756257;
 }
 
 .navigation__link[href]:focus {
-  outline-color: #83B3D3;
+  border-radius: 4px;
+  outline: 3px solid #83B3D3;
 }
 
 .navigation__link[href]:active {
   color: rgba(117, 98, 87, 0.3);
 }
 
-.actions {
+.user-block {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
 
-  margin-left: auto;
-  padding: 10px 0 14px 0;
+  padding: 14px 0;
 }
 
-.actions__search,
-.actions__like {
-  width: 20px;
-  height: 20px;
+.user-block__search,
+.user-block__like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  background: url(../img/icons.svg) center no-repeat;
+  width: 42px;
+
+  text-align: center;
 }
 
-.actions__search {
-  margin-right: 23px;
-
-  background-position: -115px -217px;
-}
-
-.actions__like {
+.user-block__like {
   position: relative;
-
-  margin-right: 32px;
-
-  background-position: -142px -217px;
 }
 
-.actions__like::after {
+.user-block__like::after {
   position: absolute;
-  top: -8px;
-  right: -14px;
+  top: -2px;
+  right: -5px;
 
   width: 20px;
   height: 20px;
@@ -151,8 +160,9 @@ body {
   line-height: 13px;
 }
 
-.actions__get {
+.user-block__button {
   width: 160px;
+  margin-left: 20px;
   padding: 9px 15px;
 
   font-size: 16px;
@@ -160,18 +170,48 @@ body {
   line-height: 20px;
 }
 
-.actions__search:focus,
-.actions__like:focus,
-.actions__get:focus {
-  outline-color: #83B3D3;
+.user-block__search:hover,
+.user-block__like:hover {
+  fill: #756257;
+}
+
+.user-block__search:active,
+.user-block__like:active {
+  fill: rgba(117, 98, 87, 0.3);
+}
+
+.user-block__like:active::after {
+  opacity: 0.3;
+}
+
+.user-block__search:focus,
+.user-block__like:focus,
+.user-block__button:focus {
+  border-radius: 4px;
+  outline: 3px solid #83B3D3;
 }
 
 .welcome {
-  width: 100%;
-  height: 485px;
-  margin: 0;
+  position: relative;
 
-  background: url(../img/index_bg.jpg) 0 -5px no-repeat;
+  width: 1200px;
+  height: 485px;
+}
+
+.welcome__heading {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  right: 0;
+  left: 0;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.welcome__image {
+  width: 1200px;
+  height: 485px;
 }
 
 .features__text {
@@ -434,10 +474,10 @@ body {
 
 .social {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
 
-  width: 108px;
   margin: 0;
   margin-right: 240px;
   padding: 0;
@@ -445,25 +485,34 @@ body {
   list-style: none;
 }
 
+.social__item {
+  margin-right: 3px;
+}
+
 .social__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  width: 25px;
-  height: 100%;
-
-  background: url(../img/icons.svg) center no-repeat;
+  width: 40px;
+  height: 40px;
 }
 
-.social__link--twitter {
-  background-position: -274px -142px;
+.social__link svg {
+  fill: #83B3D3;
 }
 
-.social__link--facebook {
-  background-position: -248px -142px;
+.social__link:hover svg {
+  fill: #68A2CA;
 }
 
-.social__link--youtube {
-  background-position: -298px -142px;
+.social__link:focus {
+  border-radius: 10px;
+  outline-color: #83B3D3;
+}
+
+.social__link:active svg {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .page-footer__phone {
@@ -484,14 +533,10 @@ body {
   padding-top: 2px;
 }
 
-.page-catalog .navigation {
-  background: url(../img/catalog-header-bg.jpg) bottom repeat-x;
-}
-
 .hotels-search {
   padding: 30px 72px 83px 71px;
 
-  background: url(../img/catalog_bg.jpg) 0 -5px no-repeat;
+  background: url(../img/catalog_bg.jpg) center no-repeat;
 }
 
 .hotels-search__heading {
