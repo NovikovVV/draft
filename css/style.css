@@ -44,13 +44,13 @@ body {
 
   width: 1200px;
   margin: 0 auto;
-  padding: 0 70px 0 169px;
+  padding: 0 70px 0 239px;
 }
 
 .navigation__logo {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 70px;
 
   width: 139px;
   height: 70px;
@@ -142,8 +142,8 @@ body {
 
 .user-block__like::after {
   position: absolute;
-  top: -2px;
-  right: -5px;
+  top: 0;
+  right: -3px;
 
   width: 20px;
   height: 20px;
@@ -215,7 +215,7 @@ body {
 }
 
 .features__text {
-  padding: 58px 240px 80px;
+  padding: 63px 240px 79px;
 
   text-align: center;
 }
@@ -406,7 +406,7 @@ body {
 }
 
 .search__text {
-  padding: 90px 240px 93px;
+  padding: 90px 240px 86px;
 
   text-align: center;
 }
@@ -434,7 +434,7 @@ body {
 
 .subscribe {
   color: #ffffff;
-  background: url(../img/subscribe_bg.jpg) center no-repeat;
+  background: url(../img/subscribe_bg.jpg) top no-repeat;
   background-color: #000000;
 }
 
@@ -496,7 +496,7 @@ body {
   display: flex;
   flex-wrap: wrap;
 
-  padding: 40px 72px 42px;
+  padding: 40px 72px 42px 60px;
 }
 
 .social {
@@ -506,7 +506,7 @@ body {
   justify-content: space-between;
 
   margin: 0;
-  margin-right: 240px;
+  margin-right: 235px;
   padding: 0;
 
   list-style: none;
