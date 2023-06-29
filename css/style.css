@@ -74,7 +74,7 @@ body {
 }
 
 .navigation__item {
-  padding: 0 17px;
+  position: relative;
 }
 
 .navigation__link {
@@ -82,7 +82,7 @@ body {
 
   display: block;
 
-  padding: 20px 0;
+  padding: 20px 17px;
 
   text-align: center;
   text-decoration: none;
@@ -94,9 +94,9 @@ body {
 
 .navigation__link--current::after {
   position: absolute;
-  right: 0;
+  right: 17px;
   bottom: 0;
-  left: 0;
+  left: 17px;
 
   height: 2px;
 
@@ -112,6 +112,7 @@ body {
 .navigation__link[href]:focus {
   border-radius: 4px;
   outline: 3px solid #83B3D3;
+  outline-offset: -3px;
 }
 
 .navigation__link[href]:active {
@@ -147,7 +148,7 @@ body {
 
   width: 20px;
   height: 20px;
-  padding-top: 2px;
+  padding-top: 5px;
 
   content: "12";
   text-align: center;
@@ -429,6 +430,7 @@ body {
   padding: 15px;
 
   font-size: 20px;
+  font-weight: 700;
   line-height: 36px;
 }
 
@@ -471,6 +473,19 @@ body {
   line-height: 26px;
 }
 
+.subscribe-form__email:hover {
+  background-color: #E6E6E6;
+}
+
+.subscribe-form__email:focus {
+  outline: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+}
+
+.subscribe-form__email--error:focus {
+  outline-color: #FF5757;
+}
+
 .subscribe-form__btn {
   width: 200px;
 
@@ -490,7 +505,19 @@ body {
 
 .subscribe-form__btn:hover {
   cursor: pointer;
+
+  background-color: #68A2CA;
 }
+
+.subscribe-form__btn:focus {
+  outline: 3px solid #756257;
+  background-color: #68A2CA;
+}
+
+.subscribe-form__btn:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 .page-footer .container {
   display: flex;
@@ -609,6 +636,8 @@ body {
 }
 
 .breadcrumbs {
+  display: flex;
+
   margin: 0;
   margin-bottom: 33px;
   padding: 0;
@@ -617,10 +646,61 @@ body {
 }
 
 .breadcrumbs__link {
+  display: block;
+
+  padding: 3px 8px;
+
+  text-decoration: none;
+
   color: #ffffff;
 
   font-size: 16px;
   line-height: 21px;
+}
+
+.breadcrumbs__link--icon {
+  fill: #ffffff;
+}
+
+.breadcrumbs__link[href] {
+  position: relative;
+
+  margin-right: 10px;
+}
+
+.breadcrumbs__link[href]::after {
+  position: absolute;
+  top: 10px;
+  right: -9px;
+
+  display: block;
+
+  width: 5px;
+  height: 8px;
+
+  content: "";
+
+  background: url(../img/breadcrumbs_mark.svg) center no-repeat;
+}
+
+.breadcrumbs__link[href]:hover {
+  cursor: pointer;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  fill: rgba(255, 255, 255, 0.7);
+}
+
+.breadcrumbs__link[href]:focus {
+  border-radius: 4px;
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
+}
+
+.breadcrumbs__link[href]:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .catalog__search-form {
@@ -743,6 +823,8 @@ fieldset {
 }
 
 .sorting__heading {
+  margin: 0;
+
   text-transform: uppercase;
 
   font-size: 30px;
