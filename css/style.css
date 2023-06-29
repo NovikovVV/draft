@@ -407,7 +407,7 @@ body {
 }
 
 .search__text {
-  padding: 90px 240px 86px;
+  padding: 90px 240px 87px;
 
   text-align: center;
 }
@@ -445,14 +445,14 @@ body {
 }
 
 .subscribe__text {
-  padding: 95px 200px;
+  padding: 95px 200px 94px;
 
   text-align: center;
 }
 
 .subscribe__description {
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
 
   font-size: 22px;
 }
