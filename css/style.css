@@ -1459,6 +1459,8 @@ fieldset {
 }
 
 .popup {
+  position: relative;
+
   width: 715px;
   padding: 62px 70px 70px;
 
@@ -1545,19 +1547,33 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .kids-tooltip {
-  display: block;
+  position: absolute;
+  top: 9px;
+  right: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   width: 25px;
   height: 25px;
   margin: 0;
 
+  text-align: center;
+
+  color: #ffffff;
   border-radius: 50%;
   background-color: #83B3D3;
 }
 
+.kids-tooltip:hover + .kids-text__popup {
+  display: block;
+}
+
 .kids-text__popup {
   position: absolute;
-  right: -400px;
+  top: 50px;
+  left: -55px;
 
   display: none;
 
@@ -1568,10 +1584,25 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #ffffff;
   border-radius: 10px;
   background-color: #333333;
+  box-shadow: 0px 15px 30px 0px #0000004D;
 
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+
+}
+
+.kids-text__popup::after {
+  position: absolute;
+  top: -20px;
+  right: 50%;
+
+  margin-right: -5px;
+
+  content: '';
+
+  border: 10px solid transparent;
+  border-bottom: 10px solid #333333;
 }
 
 .popup__form-button {
@@ -1587,7 +1618,57 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-color: #83B3D3;
 
   font-size: 20px;
+  font-weight: 700;
   line-height: 40px;
+}
+
+.popup__form-button:hover {
+  cursor: pointer;
+
+  background-color: #68A2CA;
+
+}
+
+.popup__form-button:focus {
+  outline: 3px solid #756257;
+}
+
+.popup__form-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #68A2CA;
+}
+
+.popup__form label:hover {
+  cursor: pointer;
+}
+
+.popup__close-button {
+  position: absolute;
+  top: 54px;
+  right: 70px;
+
+  width: 53px;
+  height: 53px;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+  background: url(../img/modal-close.svg) center no-repeat;
+  background-color: #F2F2F2;
+}
+
+.popup__close-button:hover {
+  cursor: pointer;
+
+  background-color: #E6E6E6;
+}
+
+.popup__close-button:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.popup__close-button:active {
+  background-color: #E6E6E6;
 }
 
 .visually-hidden {
