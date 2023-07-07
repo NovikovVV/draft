@@ -1485,7 +1485,6 @@ fieldset {
   margin: auto;
   padding: 62px 70px 70px;
 
-  border: 1px solid red;
   border-radius: 30px;
   background-color: #ffffff;
 
@@ -1551,38 +1550,88 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .adults-label {
   display: flex;
+  align-items: center;
+  align-self: center;
 
-  margin-right: auto;
+  margin-right: 73px;
+}
+
+.adults-label + .controls {
+  margin-right: 56px;
 }
 
 .controls {
-  position: relative;
+  display: flex;
+
+  border: 1px solid #F2F2F2;
+  border-radius: 4px;
+  background-color: #f2f2f2;
 }
 
-.minus,
-.plus {
-  position: absolute;
+.controls__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   width: 44px;
-  height: 50px;
-
-  border: none;
-  background-color: #F2F2F2;
 }
 
-.adults-number-input {
-  margin-right: 56px;
+.controls__button {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 25px;
+  height: 25px;
+
+  opacity: 0.3;
+  border: none;
+}
+
+.controls__button:hover {
+  cursor: pointer;
+
+  opacity: 1;
+}
+
+.controls__button:focus {
+  cursor: pointer;
+
+  opacity: 1;
+  border-radius: 4px;
+  outline: 3px solid #83B3D3;
+}
+
+.controls__button:active {
+  opacity: 0.2;
+}
+
+.controls__button::before,
+.controls__button::after {
+  position: absolute;
+
+  width: 13px;
+  height: 1px;
+
+  content: "";
+
+  background-color: #000000;
+}
+
+.controls__button--plus::after {
+  transform: rotate(90deg);
 }
 
 .adults-number-input,
 .kids-number-input {
-  width: 44px;
-  padding: 5px;
+  width: 43px;
+  padding: 4px 5px;
 
   text-align: center;
 
   border: none;
-  border-radius: 4px;
   background-color: #F2F2F2;
 
   font-size: 18px;
@@ -1592,16 +1641,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   appearance: none;
 }
 
+.adults-number-input:hover,
+.kids-number-input:hover
+
 .kids-label {
   position: relative;
 
-  width: 90px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+
+  margin-right: auto;
 }
 
 .kids-tooltip {
   position: absolute;
-  top: 9px;
-  right: 10px;
+  top: 8px;
+  left: 55px;
 
   display: flex;
   align-items: center;
