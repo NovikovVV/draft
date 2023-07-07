@@ -246,15 +246,12 @@
         </label>
         <input id="end" name="date-out" type="text" class="date-out-input"
           placeholder="1 сентября 2021">
-        <label class="adults-label" for="adults">
-          <span class="adults-text">Взрослые:</span>
-          <div class="controls">
-            <button type="button" class="minus"><span class="visually-hidden">Увеличить</span></button>
-            <button type="button" class="plus"><span class="visually-hidden">Уменьшить</span></button>
-            <input id="adults" name="adults-number" type="number"
-            class="adults-number-input" value="2">
-          </div>
-        </label>
+        <label class="adults-label" for="adults">Взрослые:</label>
+        <div class="controls">
+          <span class="controls__item"><button type="button" class="controls__button controls__button--minus"></button></span>
+          <input id="adults" name="adults-number" type="number" class="adults-number-input" value="2">
+          <span class="controls__item"><button type="button" class="controls__button controls__button--plus"></button></span>
+        </div>
         <label class="kids-label" for="kids">
           <span class="kids-text">Дети:</span>
           <span class="kids-tooltip">i</span>
@@ -262,8 +259,11 @@
             вами, возраст которых от 6 до 18 лет. Дети
             до 6 лет размещаются бесплатно.</p>
         </label>
-        <input id="kids" name="kids-number" type="number"
-          class="kids-number-input" value="1">
+        <div class="controls">
+          <span class="controls__item"><button type="button" class="controls__button controls__button--minus"></button></span>
+          <input id="kids" name="kids-number" type="number" class="kids-number-input" value="1">
+          <span class="controls__item"><button type="button" class="controls__button controls__button--plus"></button></span>
+        </div>
         <button class="popup__form-button" type="submit">Найти</button>
       </form>
     </div>
