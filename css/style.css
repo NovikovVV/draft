@@ -820,7 +820,8 @@ fieldset {
 
   width: 10px;
   height: 10px;
-  margin: -5px 0 0 -5px;
+  margin-top: -5px;
+  margin-left: -5px;
 
   content: "";
 
@@ -1288,13 +1289,25 @@ fieldset {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.rating__stars {
-  display: inline-block;
+.rating {
+  display: flex;
+  align-items: center;
 
   width: 140px;
   height: 37px;
+  margin: 0;
+  padding: 0;
 
-  border: 1px solid red;
+  list-style: none;
+
+  gap: 7px;
+}
+
+.rating__item {
+  width: 18px;
+  height: 17px;
+
+  background: url(../img/star.svg) center no-repeat;
 }
 
 .rating__value {
@@ -1494,13 +1507,13 @@ fieldset {
 }
 
 .popup__heading {
+  height: 67px;
   margin: 0 0 32px 0;
 
   text-transform: uppercase;
 
   font-size: 30px;
   font-weight: 700;
-  line-height: 40px;
 }
 
 .popup__form {
@@ -1521,13 +1534,39 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .date-in-label,
 .date-out-label {
-  margin-right: auto;
+  position: relative;
+}
+
+.date-in-label::after,
+.date-out-label::after {
+  position: absolute;
+  top: 15px;
+  right: 17px;
+
+  display: block;
+
+  width: 20px;
+  height: 20px;
+
+  content: "";
+
+  background: url(../img/date.svg) center no-repeat;
+}
+
+.date-in-text {
+  margin-right: 50px;
+}
+
+.date-out-text {
+  margin-right: 45px;
 }
 
 .date-in-input,
 .date-out-input {
+  position: relative;
+
   width: 420px;
-  padding: 10px 50px 10px 19px;
+  padding: 5px 50px 5px 19px;
 
   color: #000000;
   border: none;
@@ -1537,6 +1576,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
+}
+
+.date-in-input:hover,
+.date-out-input:hover {
+  background-color: #E6E6E6;
+}
+
+.date-in-input:focus,
+.date-out-input:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.date-in-input:active,
+.date-out-input:active {
+  outline: 2px solid #000000;
 }
 
 .date-in-input::placeholder,
@@ -1641,9 +1695,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   appearance: none;
 }
 
-.adults-number-input:hover,
-.kids-number-input:hover
-
 .kids-label {
   position: relative;
 
@@ -1680,14 +1731,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .kids-text__popup {
   position: absolute;
-  top: 50px;
-  left: -55px;
+  top: 49px;
+  left: -61px;
 
   display: none;
 
   width: 256px;
   margin: 0;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 18px 23px 22px;
 
   color: #ffffff;
   border-radius: 10px;
@@ -1702,14 +1753,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .kids-text__popup::after {
   position: absolute;
-  top: -20px;
+  top: -19px;
   right: 50%;
 
-  margin-right: -5px;
+  margin-right: -8px;
 
   content: '';
 
-  border: 10px solid transparent;
+  border: 9px solid transparent;
   border-bottom: 10px solid #333333;
 }
 
