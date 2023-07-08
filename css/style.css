@@ -568,8 +568,7 @@ body {
   fill: #83B3D3;
 }
 
-.social__link:hover svg,
-.social__link:focus svg {
+.social__link:hover svg {
   fill: #68A2CA;
 }
 
