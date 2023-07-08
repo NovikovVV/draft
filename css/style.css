@@ -1601,6 +1601,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   line-height: 40px;
 }
 
+.error-text,
+.accept-text {
+  position: absolute;
+  top: 43px;
+  left: 155px;
+
+  display: block;
+
+  color: #FF5757;
+
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.accept-text {
+  color: #000000;
+}
+
 .adults-label {
   display: flex;
   align-items: center;
