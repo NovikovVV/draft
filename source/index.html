@@ -10,23 +10,32 @@
 <body>
   <header class="page-header">
     <div class="container">
-      <a class="header-logo">
-        <img class="header-logo__image" width="34" height="38" src="img/header-logo.svg"
+      <div class="header-logo">
+        <a class="header-logo__link">
+          <img class="header-logo__image" width="34" height="38" src="img/header-logo.svg"
           alt="Веселый кот">
-        <img class="header-logo__text" width="101" height="18" src="img/header-logo-text.svg" alt="Cat Energy" >
-      </a>
+        </a>
+        <a class="header-logo__link">
+          <img class="header-logo__text" width="101" height="18" src="img/header-logo-text.svg" alt="Cat Energy" >
+        </a>
+      </div>
       <nav class="navigation">
         <button class="navigation__toggle" type="button"></button>
-        <ul class="navigation__list">
+        <ul class="navigation__list navigation__list--closed">
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current">Главная</a>
+            <a class="navigation__link navigation__link--current">
+              <span>Главная</span>
+            </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог
-              продукции</a>
+            <a class="navigation__link" href="catalog.html">
+              <span>Каталог продукции</span>
+            </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
+            <a class="navigation__link" href="form.html">
+              <span>Подбор программы</span>
+            </a>
           </li>
         </ul>
       </nav>
