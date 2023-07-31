@@ -69,7 +69,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: var(--beige-100);
 }
 
@@ -93,8 +93,8 @@ body {
 }
 
 .page-header .container {
-  background-color: var(--green-400);
   background: url("../images/header-img@1x.webp") top center no-repeat;
+  background-color: var(--green-400);
   background-size: cover;
 }
 
@@ -191,10 +191,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .page-header {
-    background: url("../images/header-bg-tablet.webp") top center no-repeat;
-  }
-
   .container {
     width: 1024px;
   }
@@ -268,11 +264,12 @@ body {
 
 @media (min-width: 1920px) {
   .page-header {
-    background: url("../images/header-bg-desktop.webp") top center no-repeat;
+    background: url("../images/header-img@1x.webp") top center no-repeat;
   }
 
-  .container {
+  .page-header .container {
     width: 1170px;
+    background: none;
   }
 
   .menu {
@@ -335,7 +332,7 @@ body {
   color: var(--orange-200);
 }
 
-.tours__filter-item input[type=radio]:focus+span {
+.tours__filter-item input["type=radio"]:focus + span {
   outline: auto;
   outline-offset: 3px;
 }
@@ -568,7 +565,7 @@ body {
   align-items: center;
 }
 
-input[type="radio"]:checked+.build__form-radio::before {
+input[type="radio"]:checked + .build__form-radio::before {
   content: "";
   display: block;
   width: 10px;
@@ -577,7 +574,7 @@ input[type="radio"]:checked+.build__form-radio::before {
   border-radius: 50%;
 }
 
-input[type="radio"]:focus+.build__form-radio {
+input[type="radio"]:focus + .build__form-radio {
   outline: auto #e59700;
 }
 
@@ -591,11 +588,11 @@ input[type="radio"]:focus+.build__form-radio {
   border-radius: 4px;
 }
 
-input[type="checkbox"]:checked+.build__form-checkbox {
+input[type="checkbox"]:checked + .build__form-checkbox {
   background: url("../images/checkbox_mark.svg") center no-repeat;
 }
 
-input[type="checkbox"]:focus+.build__form-checkbox {
+input[type="checkbox"]:focus + .build__form-checkbox {
   outline: auto #e59700;
 }
 
@@ -778,10 +775,6 @@ input[type="checkbox"]:focus+.build__form-checkbox {
 
 .gallery__item--camping .gallery__image {
   width: 100px;
-}
-
-.gallery__item---evening-city {
-  order: 6;
 }
 
 .gallery__item---evening-city {
@@ -1062,6 +1055,7 @@ input[type="checkbox"]:focus+.build__form-checkbox {
   width: 20px;
   height: 20px;
   margin-right: 5px;
+  align-self: flex-start;
 }
 
 .social__link {
