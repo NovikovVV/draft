@@ -151,6 +151,7 @@ body {
   font-weight: 700;
   line-height: 38px;
   margin-bottom: 40px;
+  letter-spacing: 0.68px;
 }
 
 .intro__text {
@@ -706,7 +707,7 @@ input[type="checkbox"]:focus + .build__form-checkbox {
 
 .reviews__text {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   color: #1B1F2B;
   font-weight: 700;
 }
@@ -990,7 +991,7 @@ input[type="checkbox"]:focus + .build__form-checkbox {
 
 .history__item-description {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .history__item-list {
