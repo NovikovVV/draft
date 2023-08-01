@@ -210,8 +210,9 @@
           </label>
           <label class="build__form-field" for="direction">
             <span class="build__form-field-name">Направление</span>
-            <select class="build__form-select" id="direction">
-              <option value="" disabled selected hidden>Куда хотите ехать?</option>
+            <select class="build__form-select" id="direction" required>
+              <option value="" disabled selected hidden>Куда хотите ехать?
+              </option>
               <option value="there">Туда</option>
               <option value="here">Сюда</option>
               <option value="nowhere">Никуда</option>
@@ -225,17 +226,17 @@
           <label class="build__form-field" for="phone">
             <span class="build__form-field-name">Телефон</span>
             <input class="build__form-input" type="tel" id="phone" name="phone"
-              placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+              placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
           </label>
           <label class="build__form-field" for="date-from">
             <span class="build__form-field-name">Дата от</span>
             <input class="build__form-input" type="text" id="date-from"
-              placeholder="ДД.ММ.ГГГГ">
+              placeholder="ДД.ММ.ГГГГ" required>
           </label>
           <label class="build__form-field" for="date-until">
             <span class="build__form-field-name">Дата до</span>
             <input class="build__form-input" type="text" id="date-until"
-              placeholder="ДД.ММ.ГГГГ">
+              placeholder="ДД.ММ.ГГГГ" required>
           </label>
           <label class="build__form-field" for="comment">
             <span class="build__form-field-name">Комментарий</span>
@@ -246,7 +247,7 @@
             <legend class="build__form-field-name">Вам есть 18 лет?</legend>
             <label class="build__form-field">
               <input class="visually-hidden" type="radio" name="age" value="yes"
-                checked>Да
+                checked required>Да
               <span class="build__form-radio"></span>
             </label>
             <label class="build__form-field">
@@ -258,7 +259,7 @@
 
           <label class="build__form-field" for="agree">
             <input class="visually-hidden" type="checkbox" name="agree"
-              id="agree">
+              id="agree" required>
             <span class="build__form-checkbox"></span>
             <span>Нажимая кнопку, я принимаю условия <a
                 href="#"><strong>Лицензионного договора</strong></a></span>
@@ -287,13 +288,17 @@
             </p>
             <div class="reviews__author">
               <div class="reviews__author-info">
-                <span class="reviews__author-name">Мария</span>
-                <span class="reviews__tour">Тур: Вдали от дома</span>
+                <span class="reviews__author-name">
+                  <a class="reviews__author-profile" href="#">Мария</a>
+                </span>
+                <span class="reviews__tour">
+                  <a class="reviews_tour-link" href="#">Тур: Вдали от дома</a>
+                </span>
               </div>
-              <div class="reviews__author-image">
+              <a class="reviews__author-image" href="#">
                 <img class="reviews__author-image"
                   src="images/review-photo-1.webp" alt="">
-              </div>
+              </a>
             </div>
           </li>
           <li class="reviews__item">
@@ -310,13 +315,18 @@
             </p>
             <div class="reviews__author">
               <div class="reviews__author-info">
-                <span class="reviews__author-name">Павел</span>
-                <span class="reviews__tour">Тур: Путешествие в горы</span>
+                <span class="reviews__author-name">
+                  <a class="reviews__author-profile" href="#">Павел</a>
+                </span>
+                <span class="reviews__tour">
+                  <a class="reviews_tour-link" href="#">Тур: Путешествие в
+                    горы</a>
+                </span>
               </div>
-              <div class="reviews__author-image">
+              <a class="reviews__author-image" href="#">
                 <img class="reviews__author-image"
                   src="images/review-photo-2.webp" alt="">
-              </div>
+              </a>
             </div>
           </li>
         </ul>
@@ -328,82 +338,108 @@
         также рамки и место обучения кадров</p>
       <ul class="gallery__list">
         <li class="gallery__item gallery__item--airplane">
-          <picture class="gallery__picture">
-            <img class="gallery__image" src="images/travel-photo-1@1x.webp"
-              srcset="images/travel-photo-1@2x.webp 2x" alt="">
-          </picture>
+          <a class="gallery__link" href="#">
+            <picture class="gallery__picture">
+              <img class="gallery__image" src="images/travel-photo-1@1x.webp"
+                srcset="images/travel-photo-1@2x.webp 2x" alt="">
+            </picture>
+          </a>
         </li>
         <li class="gallery__item gallery__item--tent">
-          <picture class="gallery__picture">
-            <img class="gallery__image" src="images/travel-photo-2@1x.webp"
-              srcset="images/travel-photo-2@2x.webp 2x" alt="">
-          </picture>
+          <a class="gallery__link" href="#">
+            <picture class="gallery__picture">
+              <img class="gallery__image" src="images/travel-photo-2@1x.webp"
+                srcset="images/travel-photo-2@2x.webp 2x" alt="">
+            </picture>
+          </a>
         </li>
         <li class="gallery__item gallery__item--hiking">
-          <picture class="gallery__picture">
-            <img class="gallery__image" src="images/travel-photo-3@1x.webp"
-              srcset="images/travel-photo-3@2x.webp 2x" alt="">
-          </picture>
+          <a class="gallery__link" href="#">
+            <picture class="gallery__picture">
+              <img class="gallery__image" src="images/travel-photo-3@1x.webp"
+                srcset="images/travel-photo-3@2x.webp 2x" alt="">
+            </picture>
+          </a>
         </li>
         <li class="gallery__item gallery__item--road">
-          <picture class="gallery__picture">
-            <img class="gallery__image" src="images/travel-photo-4@1x.webp"
-              srcset="images/travel-photo-4@2x.webp 2x" alt="">
-          </picture>
+          <a class="gallery__link" href="#">
+            <picture class="gallery__picture">
+              <img class="gallery__image" src="images/travel-photo-4@1x.webp"
+                srcset="images/travel-photo-4@2x.webp 2x" alt="">
+            </picture>
+          </a>
         </li>
         <li class="gallery__item gallery__item--rocks">
-          <picture class="gallery__picture">
-            <img class="gallery__image" src="images/travel-photo-5@1x.webp"
-              srcset="images/travel-photo-5@2x.webp 2x" alt="">
-          </picture>
+          <a class="gallery__link" href="#">
+            <picture class="gallery__picture">
+              <img class="gallery__image" src="images/travel-photo-5@1x.webp"
+                srcset="images/travel-photo-5@2x.webp 2x" alt="">
+            </picture>
+          </a>
         </li>
         <li class="gallery__item gallery__item--map">
-          <picture class="gallery__picture">
-            <img class="gallery__image" src="images/travel-photo-6@1x.webp"
-              srcset="images/travel-photo-6@2x.webp 2x" alt="">
-          </picture>
+          <a class="gallery__link" href="#">
+            <picture class="gallery__picture">
+              <img class="gallery__image" src="images/travel-photo-6@1x.webp"
+                srcset="images/travel-photo-6@2x.webp 2x" alt="">
+            </picture>
+          </a>
         </li>
         <li class="gallery__item gallery__item--bridge">
-          <picture class="gallery__picture">
-            <img class="gallery__image" src="images/travel-photo-7@1x.webp"
-              srcset="images/travel-photo-7@2x.webp 2x" alt="">
-          </picture>
+          <a class="gallery__link" href="#">
+            <picture class="gallery__picture">
+              <img class="gallery__image" src="images/travel-photo-7@1x.webp"
+                srcset="images/travel-photo-7@2x.webp 2x" alt="">
+            </picture>
+          </a>
         </li>
         <li class="gallery__item gallery__item--camping">
-          <picture class="gallery__picture">
-            <img class="gallery__image" src="images/travel-photo-8@1x.webp"
-              srcset="images/travel-photo-8@2x.webp 2x" alt="">
-          </picture>
+          <a class="gallery__link" href="#">
+            <picture class="gallery__picture">
+              <img class="gallery__image" src="images/travel-photo-8@1x.webp"
+                srcset="images/travel-photo-8@2x.webp 2x" alt="">
+            </picture>
+          </a>
         </li>
         <li class="gallery__item gallery__item---evening-city">
-          <picture class="gallery__picture">
-            <img class="gallery__image" src="images/travel-photo-9@1x.webp"
-              srcset="images/travel-photo-9@2x.webp 2x" alt="">
-          </picture>
+          <a class="gallery__link" href="#">
+            <picture class="gallery__picture">
+              <img class="gallery__image" src="images/travel-photo-9@1x.webp"
+                srcset="images/travel-photo-9@2x.webp 2x" alt="">
+            </picture>
+          </a>
         </li>
         <li class="gallery__item gallery__item--mountains">
-          <picture class="gallery__picture">
-            <img class="gallery__image" src="images/travel-photo-10@1x.webp"
-              srcset="images/travel-photo-10@2x.webp 2x" alt="">
-          </picture>
+          <a class="gallery__link" href="#">
+            <picture class="gallery__picture">
+              <img class="gallery__image" src="images/travel-photo-10@1x.webp"
+                srcset="images/travel-photo-10@2x.webp 2x" alt="">
+            </picture>
+          </a>
         </li>
         <li class="gallery__item gallery__item--market">
-          <picture class="gallery__picture">
-            <img class="gallery__image" src="images/travel-photo-11@1x.webp"
-              srcset="images/travel-photo-11@2x.webp 2x" alt="">
-          </picture>
+          <a class="gallery__link" href="#">
+            <picture class="gallery__picture">
+              <img class="gallery__image" src="images/travel-photo-11@1x.webp"
+                srcset="images/travel-photo-11@2x.webp 2x" alt="">
+            </picture>
+          </a>
         </li>
         <li class="gallery__item gallery__item--sup">
-          <picture class="gallery__picture">
-            <img class="gallery__image" src="images/travel-photo-12@1x.webp"
-              srcset="images/travel-photo-12@2x.webp 2x" alt="">
-          </picture>
+          <a class="gallery__link" href="#">
+            <picture class="gallery__picture">
+              <img class="gallery__image" src="images/travel-photo-12@1x.webp"
+                srcset="images/travel-photo-12@2x.webp 2x" alt="">
+            </picture>
+          </a>
         </li>
         <li class="gallery__item gallery__item--morning-city">
-          <picture class="gallery__picture">
-            <img class="gallery__image" src="images/travel-photo-13@1x.webp"
-              srcset="images/travel-photo-13@2x.webp 2x" alt="">
-          </picture>
+          <a class="gallery__link" href="#">
+            <picture class="gallery__picture">
+              <img class="gallery__image" src="images/travel-photo-13@1x.webp"
+                srcset="images/travel-photo-13@2x.webp 2x" alt="">
+            </picture>
+          </a>
         </li>
       </ul>
     </section>
