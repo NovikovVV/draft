@@ -168,7 +168,7 @@ body {
   font-size: 16px;
   background-color: var(--white);
   line-height: 23px;
-  color: #1B1F2B;
+  color: var(--black);
   align-self: center;
   padding: 5px 20px;
 }
@@ -180,7 +180,7 @@ body {
 
 .intro__link:active {
   background-color: var(--orange-100);
-  color: #1B1F2B;
+  color: var(--black);
 }
 
 .button {
@@ -290,7 +290,7 @@ body {
 
 
 .tours {
-  color: #1B1F2B;
+  color: var(--black);
   padding: 75px 21px 37.5px;
 }
 
@@ -303,7 +303,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 23px;
-  color: #1B1F2B;
+  color: var(--black);
   margin-bottom: 39px;
 }
 
@@ -319,7 +319,7 @@ body {
 
 .tours__filter-item:hover:not(.tours__filter-item--active) span {
   cursor: pointer;
-  text-decoration: underline #1B1F2B 2px;
+  text-decoration: underline var(--black) 2px;
   text-underline-offset: 4px;
 }
 
@@ -504,7 +504,7 @@ body {
 }
 
 .build__form-field-name {
-  color: #1B1F2B;
+  color: var(--black);
   margin-bottom: 8px;
   padding: 0;
 }
@@ -578,7 +578,7 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 1px solid #1B1F2B;
+  border: 1px solid var(--black);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -589,7 +589,7 @@ input[type="radio"]:checked + .build__form-radio::before {
   display: block;
   width: 10px;
   height: 10px;
-  background-color: #1B1F2B;
+  background-color: var(--black);
   border-radius: 50%;
 }
 
@@ -602,7 +602,7 @@ input[type="radio"]:focus + .build__form-radio {
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  border: 2px solid #1B1F2B;
+  border: 2px solid var(--black);
   margin-right: 10px;
   border-radius: 4px;
 }
@@ -626,7 +626,7 @@ input[type="checkbox"]:focus + .build__form-checkbox {
 }
 
 .build__form-field[for="agree"] a {
-  color: #1B1F2B;
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -708,7 +708,7 @@ input[type="checkbox"]:focus + .build__form-checkbox {
 .reviews__text {
   margin: 0;
   margin-bottom: 23px;
-  color: #1B1F2B;
+  color: var(--black);
   font-weight: 700;
 }
 
@@ -733,7 +733,7 @@ input[type="checkbox"]:focus + .build__form-checkbox {
 
 .reviews__author-profile {
   text-decoration: none;
-  color: #1B1F2B;
+  color: var(--black);
   font-size: 23px;
   font-weight: 700;
   line-height: 28px;
@@ -1090,7 +1090,7 @@ input[type="checkbox"]:focus + .build__form-checkbox {
 .lets-go__heading {
   margin: 0;
   margin-bottom: 20px;
-  color: #1B1F2B;
+  color: var(--black);
   text-align: center;
   font-size: 23px;
   font-weight: 700;
@@ -1105,7 +1105,7 @@ input[type="checkbox"]:focus + .build__form-checkbox {
 }
 
 .lets-go__email {
-  color: #1B1F2B;
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -1154,7 +1154,7 @@ input[type="checkbox"]:focus + .build__form-checkbox {
 
 .social__link {
   text-decoration: none;
-  color: #1B1F2B;
+  color: var(--black);
 }
 
 .social__link:hover {
