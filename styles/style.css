@@ -1311,7 +1311,12 @@ input[type="checkbox"]:focus + .build__form-checkbox {
   }
 
   .reviews {
-    padding: 67.5px 53px;
+    padding: 66.5px 53px 67.5px;
+  }
+
+  .reviews__heading {
+    letter-spacing: normal;
+    margin-bottom: 30px;
   }
 
   .reviews__description {
@@ -1319,6 +1324,7 @@ input[type="checkbox"]:focus + .build__form-checkbox {
     font-weight: 400;
     line-height: 28px;
     margin-bottom: 100px;
+    padding: 0 250px;
   }
 
   .reviews__list {
@@ -1328,6 +1334,10 @@ input[type="checkbox"]:focus + .build__form-checkbox {
   .reviews__item {
     padding: 40px;
     min-height: 841px;
+  }
+
+  .reviews__text {
+    margin-bottom: 26px;
   }
 
   .reviews__author-name {
@@ -1358,6 +1368,7 @@ input[type="checkbox"]:focus + .build__form-checkbox {
 
   .gallery__heading {
     margin-bottom: 30px;
+    letter-spacing: normal;
   }
 
   .gallery__description {
@@ -1375,10 +1386,7 @@ input[type="checkbox"]:focus + .build__form-checkbox {
   .gallery__item .gallery__image {
     width: 315px;
     height: 300px;
-  }
-
-  .gallery__item--airplane {
-    order: 1;
+    border-radius: 50px;
   }
 
   .gallery__item--tent {
@@ -1450,6 +1458,7 @@ input[type="checkbox"]:focus + .build__form-checkbox {
 
   .history__heading {
     margin-bottom: 30px;
+    letter-spacing: normal;
   }
 
   .history__description {
@@ -1463,6 +1472,7 @@ input[type="checkbox"]:focus + .build__form-checkbox {
   .history__item {
     max-width: 918px;
     min-height: 567px;
+    border-radius: 50px;
   }
 
   .history__item-image {
@@ -1479,12 +1489,22 @@ input[type="checkbox"]:focus + .build__form-checkbox {
     font-weight: 500;
     line-height: 43px;
     margin-bottom: 37px;
+    letter-spacing: normal;
   }
 
   .history__item-text {
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
+    max-width: 554px;
+  }
+
+  .history__item-description {
+    margin-bottom: 30px;
+  }
+
+  .history__item-list {
+    padding-left: 30px;
   }
 
   .history__item-link {
