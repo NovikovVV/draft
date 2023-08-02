@@ -16,6 +16,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -609,9 +610,7 @@ input[type="checkbox"]:focus+.build__form-checkbox {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  display: grid;
   gap: 18px;
 }
 
@@ -619,6 +618,8 @@ input[type="checkbox"]:focus+.build__form-checkbox {
   padding: 20px;
   border-radius: 20px;
   background-color: var(--beige-200);
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__text {
@@ -633,27 +634,28 @@ input[type="checkbox"]:focus+.build__form-checkbox {
 }
 
 .reviews__author {
+  margin-top: auto;
   display: flex;
   align-items: flex-end;
 }
 
 .reviews__author-info {
-  width: 203px;
   display: flex;
   flex-direction: column;
+  margin-right: auto;
 }
 
 .reviews__author-name {
   margin-bottom: 10px;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.92px;
 }
 
 .reviews__author-profile {
   text-decoration: none;
   color: var(--black);
-  font-size: 23px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 0.92px;
 }
 
 .reviews__author-profile:hover {
@@ -966,6 +968,10 @@ input[type="checkbox"]:focus+.build__form-checkbox {
   width: 26px;
   height: 22px;
   background: url("../images/arrow.svg") center no-repeat;
+}
+
+.history__item-social {
+  display: none;
 }
 
 .lets-go {
@@ -1302,6 +1308,213 @@ input[type="checkbox"]:focus+.build__form-checkbox {
 
   .build__form-button--submit {
     margin-right: 25px;
+  }
+  
+  .reviews {
+    padding: 67.5px 53px;
+  }
+  
+  .reviews__description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 100px;
+  }
+  
+  .reviews__list {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .reviews__item {
+    padding: 40px;
+    min-height: 841px;
+  }
+  
+  .reviews__author-name {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 43px;
+  }
+  
+  .reviews__author-profile:hover {
+   text-underline-offset: 8px;
+  }
+  
+  .reviews_tour-link:hover {
+    text-underline-offset: 5px;
+  }
+  
+  .reviews__tour {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.17px;
+  }
+  
+  .gallery {
+    width: 1024px;
+    padding: 67.5px 20px;
+  }
+  
+  .gallery__heading {
+    margin-bottom: 30px;
+  }
+  
+  .gallery__description {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 0 260px;
+    margin-bottom: 100px;
+  }
+  
+  .gallery__list {
+    row-gap: 30px;
+  }
+  
+  .gallery__item .gallery__image {
+    width: 315px;
+    height: 300px;
+  }
+  
+  .gallery__item--airplane {
+    order: 1;
+  }
+
+  .gallery__item--tent {
+    display: none;
+  }
+
+  .gallery__item--hiking {
+    display: block;
+    order: 2;
+  }
+
+  .gallery__item--rocks {
+    order: 3;
+  }
+
+  .gallery__item--rocks .gallery__image {
+    width: 231px;
+  }
+
+  .gallery__item--map {
+    display: block;
+    order: 4;
+  }
+
+  .gallery__item--map .gallery__image {
+    width: 231px;
+  }
+
+  .gallery__item--bridge {
+    display: none;
+  }
+
+  .gallery__item--camping {
+    order: 5;
+  }
+
+  .gallery__item--camping .gallery__image {
+    width: 231px;
+  }
+
+  .gallery__item---evening-city {
+    order: 7;
+  }
+
+  .gallery__item--mountains {
+    order: 8;
+  }
+
+  .gallery__item--market {
+    display: block;
+    order: 9;
+  }
+
+  .gallery__item--sup {
+    display: none;
+  }
+
+  .gallery__item--morning-city {
+    order: 6;
+  }
+
+  .gallery__item--morning-city .gallery__image {
+    width: 231px;
+  }
+  
+  .history {
+    padding: 67.5px 53px;
+  }
+  
+  .history__heading {
+    margin-bottom: 30px;
+  }
+  
+  .history__description {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 0 250px;
+    margin-bottom: 100px;
+  }
+  
+  .history__list {
+   
+  }
+  
+  .history__item {
+    max-width: 918px;
+    min-height: 567px;
+  }
+  
+  .history__item-image {
+    width: 918px;
+    height: 567px;
+  }
+  
+  .history__item-content {
+    padding: 60px;
+  }
+  
+  .history__item-heading {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 43px;
+    margin-bottom: 37px;
+  }
+  
+  .history__item-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  
+  .history__item-link {
+    margin-right: auto;
+  }
+  
+  .history__item-social {
+    display: block;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    list-style: none;
+    display: flex;
+    gap: 35px;
+  }
+  
+  .history__item-social-link {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: none;
+  }
+  
+  .history__item-social-link:hover {
+    text-decoration: underline;
   }
 }
 
