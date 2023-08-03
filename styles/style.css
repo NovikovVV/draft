@@ -1044,9 +1044,12 @@ input[type="checkbox"]:focus + .build__form-checkbox {
   color: var(--green-400);
 }
 
+.page-footer {
+  background-color: var(--beige-200);
+}
+
 .social {
   padding: 21px;
-  background-color: var(--beige-200);
 }
 
 .social__heading {
@@ -1131,6 +1134,7 @@ input[type="checkbox"]:focus + .build__form-checkbox {
     column-gap: 30px;
     row-gap: 15px;
     max-width: 550px;
+    padding-top: 3px;
   }
 
   .navigation__link {
@@ -1145,6 +1149,10 @@ input[type="checkbox"]:focus + .build__form-checkbox {
 
   .navigation__link:active span {
     opacity: 0.8;
+  }
+
+  .phone {
+    padding-top: 3px;
   }
 
   .intro {
@@ -1258,6 +1266,7 @@ input[type="checkbox"]:focus + .build__form-checkbox {
 
   .build__form-field[for="comment"] {
     grid-column: 1 / -1;
+    max-width: 798px;
   }
 
   .build__form-input {
@@ -1344,6 +1353,7 @@ input[type="checkbox"]:focus + .build__form-checkbox {
   .reviews__item {
     padding: 40px;
     min-height: 841px;
+    max-width: 450px;
   }
 
   .reviews__text {
@@ -1649,12 +1659,196 @@ input[type="checkbox"]:focus + .build__form-checkbox {
     background: url("../images/header-img@1x.webp") top center no-repeat;
   }
 
-  .page-header .container {
+  .container {
     width: 1170px;
     background: none;
   }
 
   .menu {
     padding: 28px 0;
+  }
+
+  .navigation__list {
+    gap: 50px;
+  }
+
+  .tours {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .tours__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .tours__item {
+    max-width: 370px;
+  }
+
+  .tours__item-image {
+    width: 370px;
+  }
+
+  .build {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .build__description {
+    padding: 0 385px;
+  }
+
+  .build__form {
+    padding: 70px;
+    column-gap: 30px;
+  }
+
+  .build__form-field {
+    max-width: 500px;
+  }
+
+  .build__form-field[for="comment"] {
+    max-width: 1030px;
+  }
+
+  .build__form-checkbox {
+    margin-right: 19px;
+  }
+
+  .reviews {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .reviews__heading {
+    padding: 0 320px;
+  }
+
+  .reviews__description {
+    padding: 0 376px;
+  }
+
+  .reviews__list {
+    gap: 30px;
+  }
+
+  .reviews__item {
+    max-width: 570px;
+    min-height: 673px;
+    border-radius: 50px;
+  }
+
+  .reviews__text {
+    margin-bottom: 28px;
+  }
+
+  .gallery {
+    width: 1920px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .gallery__description {
+    padding-right: 700px;
+    padding-left: 700px;
+  }
+
+  .gallery__item {
+    order: 0;
+  }
+
+  .gallery__item--airplane .gallery__image {
+    width: 442.5px;
+  }
+  
+  .gallery__item--tent {
+    display: block;
+  }
+
+  .gallery__item--tent .gallery__image {
+    width: 442.5px;
+  }
+  
+  .gallery__item--hiking .gallery__image {
+    width: 442.5px;
+  }
+  
+  .gallery__item--road .gallery__image {
+    width: 442.5px;
+  }
+  
+  .gallery__item--rocks .gallery__image {
+    width: 349px;
+  }
+
+  .gallery__item--map .gallery__image {
+    width: 349px;
+  }
+  
+  .gallery__item--bridge {
+    display: block;
+  }
+
+  .gallery__item--bridge .gallery__image {
+    width: 349px;
+  }
+  
+  .gallery__item--camping .gallery__image {
+    width: 349px;
+  }
+
+  .gallery__item--morning-city .gallery__image {
+    width: 349px;
+  }
+
+  .gallery__item---evening-city .gallery__image {
+    width: 442.5px;
+  }
+  
+  .gallery__item--mountains .gallery__image {
+    width: 442.5px;
+  }
+  
+  .gallery__item--market {
+    display: block;
+  }
+
+  .gallery__item--market .gallery__image {
+    width: 442.5px;
+  }
+  
+  .gallery__item--sup {
+    display: block;
+  }
+
+  .gallery__item--sup .gallery__image {
+    width: 442.5px;
+  }
+  
+  .history {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .history__item {
+    max-width: 1170px;
+  }
+
+  .history__item-image {
+    width: 1170px;
+  }
+
+  .lets-go {
+    justify-content: center;
+  }
+
+  .lets-go__link {
+    margin-right: 30px;
+  }
+
+  .social {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
