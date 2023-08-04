@@ -1707,6 +1707,10 @@ input[type="checkbox"]:focus + .build__form-checkbox {
   .build__form-field {
     max-width: 500px;
   }
+  
+  .build__form-select {
+    background-position: 454px 21px;
+  }
 
   .build__form-field[for="comment"] {
     max-width: 1030px;
@@ -1829,6 +1833,10 @@ input[type="checkbox"]:focus + .build__form-checkbox {
   .history {
     padding-right: 0;
     padding-left: 0;
+  }
+  
+  .history__description {
+    padding: 0 350px;
   }
 
   .history__item {
