@@ -1198,6 +1198,10 @@ input[type="checkbox"]:focus + .build__form-checkbox {
   .tours__filter {
     gap: 30px;
   }
+  
+  .tours__filter-item:hover:not(.tours__filter-item--active) span {
+    text-underline-offset: 10px;
+  }
 
   .tours__filter-item--active span {
     text-underline-offset: 10px;
