@@ -1,0 +1,44 @@
+.price {
+  background-color: #f2f2f2;
+}
+
+.price__table {
+  border-collapse: collapse;
+}
+
+.price__table td {
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  width: 237px;
+  height: 63px;
+  padding: 0 23px;
+}
+
+.price__table-header th:not(.hidden) {
+  width: 237px;
+  height: 98px;
+  background-color: #283645;
+  color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.price__name {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.price__value {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.price__row-name {
+  color: #283645;
+}
+
+.price__status {
+  text-align: center;
+}

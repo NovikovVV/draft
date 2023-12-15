@@ -1,0 +1,41 @@
+.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 78px;
+  max-width: 1000px;
+}
+
+.menu__link {
+  color: #fff;
+  line-height: 18px;
+  text-decoration: none;
+  position: relative;
+
+  &--active {
+    &:after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background-color: #ffffff;
+      bottom: -20px;
+      left: 0;
+    }
+  }
+
+  &[href] {
+    &:hover {
+      color: #D22856;
+      cursor: pointer;
+    }
+
+    &:active {
+      color: #ffffff;
+      opacity: 0.3;
+    }
+  }
+}

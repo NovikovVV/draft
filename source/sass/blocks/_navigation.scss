@@ -1,0 +1,13 @@
+.navigation {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding-top: 27px;
+  padding-bottom: 43px;
+}
