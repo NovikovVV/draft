@@ -1,4 +1,17 @@
 .logo {
   margin-right: auto;
   display: inline-flex;
+
+  svg {
+    fill: #ffffff;
+
+    &:hover {
+      fill: #D22856;
+    }
+
+    &:active {
+      fill: #283645;
+      opacity: 0.3;
+    }
+  }
 }

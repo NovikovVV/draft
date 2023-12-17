@@ -1,0 +1,47 @@
+.timer {
+  display: grid;
+  grid-template-columns: 300px 570px;
+  column-gap: 71px;
+  padding-top: 68px;
+  padding-bottom: 59px;
+}
+
+.timer__text {
+  padding-top: 95px;
+}
+
+.timer__title {
+  margin: 0;
+  margin-bottom: 25px;
+  color: #000000;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.timer__description {
+  margin: 0;
+  margin-bottom: 30px;
+  color: #283645;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.timer__link {
+  color: #D22856;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration-line: underline;
+
+  &:hover {
+    color: #283645;
+  }
+
+  &:active {
+    color: #283645;
+    opacity: 0.3;
+  }
+}

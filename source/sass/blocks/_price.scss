@@ -1,5 +1,7 @@
 .price {
   background-color: #f2f2f2;
+  padding-top: 154px;
+  padding-bottom: 94px;
 }
 
 .price__table {
@@ -10,13 +12,13 @@
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
   width: 237px;
-  height: 63px;
+  height: 61px;
   padding: 0 23px;
 }
 
 .price__table-header th:not(.hidden) {
-  width: 237px;
-  height: 98px;
+  width: 240px;
+  height: 100px;
   background-color: #283645;
   color: #ffffff;
   border: 2px solid #e5e5e5;
