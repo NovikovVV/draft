@@ -1,76 +1,183 @@
 .features {
-  background-color: #F2F2F2;
-  padding-top: 62px;
+  background-color: #f2f2f2;
 }
 
-.features__item-image-container {
-  position: relative;
+.features__wrapper {
+  min-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
 
-  &::before {
-    content: "";
-    width: 100%;
-    position: absolute;
-    bottom: 92px;
-    left: 7px;
-    display: block;
-    border-radius: 300px;
-    opacity: 0.3;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, #000 49.8%, rgba(0, 0, 0, 0.00) 93.23%);
-    filter: blur(2px);
-    height: 17px;
+  @media (min-width: 660px) {
+    min-width: 660px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+    padding: 0 130px;
   }
 }
 
 .features__title {
+  padding-top: 40px;
+  padding-bottom: 36px;
+  margin: 0;
   color: #283645;
   text-align: center;
-  font-size: 50px;
+  font-size: 24px;
   font-weight: 300;
-  line-height: normal;
-  margin: 0;
-  margin-bottom: 57px;
-  padding: 0 80px;
+  line-height: 120%;
+  background-color: #ffffff;
+
+  @media (min-width: 660px) {
+    font-size: 40px;
+    line-height: normal;
+    padding-top: 3px;
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 50px;
+    padding-top: 21px;
+  }
+
+  p {
+    &:first-child {
+      margin-bottom: 30px;
+
+      @media (min-width: 660px) {
+        margin-bottom: 0;
+        padding-top: 42px;
+      }
+    }
+  }
 }
 
 .features__list {
+  z-index: 1;
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 68px;
-  justify-content: center;
+  padding-top: 76px;
+  padding-bottom: 318px;
+  display: grid;
+  row-gap: 31px;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    bottom: -43px;
+    content: "";
+    width: 100%;
+    height: 320px;
+    background: url("../img/feature-mobile.webp") center no-repeat;
+
+    @media (min-width: 660px) {
+      background: url("../img/feature-tablet.webp") center no-repeat;
+      width: 268px;
+      height: 547px;
+      left: 0;
+      top: 1px;
+      bottom: 0;
+    }
+
+    @media (min-width: 1200px) {
+      display: none;
+    }
+  }
+
+  @media (min-width: 660px) {
+    min-height: 482px;
+    padding-left: 310px;
+    padding-top: 71px;
+    row-gap: 34px;
+    padding-bottom: 43px;
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 252px);
+    justify-content: space-between;
+    padding-top: 324px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .features__item {
-  width: 252px;
-  text-align: center;
+  position: relative;
+  background-color: #f2f2f2;
+
+  @media (min-width: 1200px) {
+    padding-top: 56px;
+
+    &::before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 384px;
+      top: -302px;
+      left: -34px;
+      display: block;
+      background: url('../img/feature-desktop-1.webp') center no-repeat;
+    }
+  }
 }
 
-.features__item-text {
-  margin-top: -100px;
-  background-color: #F2F2F2;
-  position: relative;
-  z-index: 1;
-  padding-top: 67px;
+.features__item--two {
+  @media (min-width: 1200px) {
+    &::before {
+      background: url('../img/feature-desktop-2.webp') center no-repeat;
+    }
+  }
+}
+
+.features__item--three {
+  @media (min-width: 1200px) {
+    &::before {
+      background: url('../img/feature-desktop-3.webp') center no-repeat;
+    }
+  }
 }
 
 .features__item-title {
-  color: #000000;
-  font-size: 30px;
+  color: #000;
+  text-align: center;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 24px;
   margin: 0;
-  margin-bottom: 22px;
-  padding: 0 10px;
+  margin-bottom: 12px;
+
+  @media (min-width: 660px) {
+    text-align: left;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 10px;
+    margin-bottom: 22px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
-.features__item-description {
+.features__item-text {
   color: #283645;
-  font-size: 18px;
+  text-align: center;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 24px;
   margin: 0;
-  padding: 0 5px;
+
+  @media (min-width: 660px) {
+    text-align: left;
+  }
+
+  @media (min-width: 1200px) {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 5px;
+  }
 }

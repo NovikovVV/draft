@@ -1,4 +1,17 @@
 .page-header {
-  background: url("../img/back-desktop.webp") top center no-repeat;
-  background-size: cover;
+  background-image: url('../img/header-bg-mobile.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (min-width: 486px) {
+    background-size: cover;
+  }
+
+  @media (min-width: 660px) {
+    background-image: url('../img/header-bg-tablet.webp');
+  }
+
+  @media (min-width: 1200px) {
+    background-image: url('../img/header-bg-desktop.webp');
+  }
 }

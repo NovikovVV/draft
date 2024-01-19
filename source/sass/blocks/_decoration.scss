@@ -1,0 +1,25 @@
+.decoration--triangle {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -24px;
+    border-top: 25px solid #ffffff;
+    border-right: calc(100vw - 17px) solid transparent;
+
+    @media (min-width: 660px) {
+      bottom: -44px;
+      border-top: 45px solid #ffffff;
+    }
+
+    @media (min-width: 1200px) {
+      bottom: -139px;
+      border-top: 140px solid #ffffff;
+    }
+  }
+}

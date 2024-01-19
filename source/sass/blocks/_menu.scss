@@ -1,35 +1,69 @@
 .menu {
+  position: absolute;
+  top: 66px;
+  width: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
-  flex-direction: row;
+  display: none;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 78px;
-  max-width: 1000px;
+  border-top: 1px solid #000000;
+  background-color: #283645;
+
+  @media (min-width: 660px) {
+    top: 105px;
+  }
+
+  @media (min-width: 1200px) {
+    position: static;
+    width: auto;
+    max-width: 750px;
+    align-items: flex-start;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: unset;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    gap: 79.5px;
+  }
+}
+
+.menu--opened {
+  display: flex;
 }
 
 .menu__link {
   color: #fff;
-  line-height: 18px;
   text-decoration: none;
-  position: relative;
+  display: block;
+  padding: 15px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-align: center;
 
-  &--active {
-    &:after {
-      content: "";
-      position: absolute;
-      height: 2px;
-      width: 100%;
-      background-color: #ffffff;
-      bottom: -20px;
-      left: 0;
+  @media (min-width: 1200px) {
+    text-transform: none;
+    padding: 0;
+    font-weight: 400;
+    line-height: 18px;
+    border: none;
+
+    &--active {
+      text-decoration: underline;
+      text-underline-offset: 18px;
+      text-decoration-thickness: 2px;
     }
   }
 
   &[href] {
     &:hover {
-      color: #D22856;
+      color: #d22856;
       cursor: pointer;
     }
 
@@ -38,4 +72,45 @@
       opacity: 0.3;
     }
   }
+}
+
+.menu__toggle {
+  position: absolute;
+  width: 50px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  top: 21px;
+  right: 20px;
+
+  @media (min-width: 660px) {
+    top: 43px;
+    right: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+
+  svg {
+    fill: #ffffff;
+
+    &:hover {
+      fill: #d22856;
+      cursor: pointer;
+    }
+
+    &:active {
+      fill: #d22856;
+      opacity: 0.3;
+    }
+  }
+}
+
+.menu__toggle-item {
+  fill: #ffffff;
 }

@@ -1,17 +1,59 @@
 .logo {
-  margin-right: auto;
-  display: inline-flex;
+  padding: 22px 20px 14px 20px;
+  align-self: flex-start;
+
+  &:hover {
+    svg {
+      fill: #d22856;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: #fff;
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: 660px) {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+
+  @media (min-width: 1200px) {
+    outline-offset: -2px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 43px;
+  }
 
   svg {
     fill: #ffffff;
+  }
+}
 
-    &:hover {
-      fill: #D22856;
-    }
+.logo__item-mobile {
+  @media (min-width: 660px) {
+    display: none;
+  }
+}
 
-    &:active {
-      fill: #283645;
-      opacity: 0.3;
-    }
+.logo__item-tablet {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.logo__item-desktop {
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: block;
   }
 }

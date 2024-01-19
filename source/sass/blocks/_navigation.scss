@@ -1,13 +1,27 @@
 .navigation {
-  background-color: rgba(0, 0, 0, 0.3);
-}
 
-.navigation .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  padding-top: 27px;
-  padding-bottom: 43px;
+  .container {
+    min-width: 320px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+
+    &--open {
+      background-color: #283645;
+    };
+
+    @media (min-width: 1200px) {
+      justify-content: space-between;
+      padding: 0 130px;
+      background-color: unset;
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
