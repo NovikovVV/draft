@@ -1,0 +1,39 @@
+.desktop-controls {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  justify-content: space-between;
+  display: none;
+  position: relative;
+  top: -194px;
+
+  @media (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.desktop-controls__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 22px;
+  height: 41px;
+  opacity: 0.3;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.desktop-controls__item--next {
+  transform: rotate(180deg);
+}
