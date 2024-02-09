@@ -1,25 +1,52 @@
 .price {
-  background-color: #f2f2f2;
-  padding-top: 79px;
+  position: relative;
+
+  padding-top: 99px;
   padding-bottom: 46px;
 
+  background-color: #f2f2f2;
+
   @media (min-width: 660px) {
-    padding-top: 20px;
+    padding-top: 100px;
     padding-bottom: 69px;
   }
 
   @media (min-width: 1200px) {
-    padding-top: 70px;
+    padding-top: 154px;
     padding-bottom: 96px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+
+    display: block;
+
+    width: 0;
+    height: 0;
+
+    content: "";
+
+    border-top: 25px solid #ffffff;
+    border-right: calc(100vw - 17px) solid transparent;
+
+    @media (min-width: 660px) {
+      border-top: 45px solid #ffffff;
+    }
+
+    @media (min-width: 1200px) {
+      border-top: 140px solid #ffffff;
+    }
   }
 
   .container {
     padding: 0;
 
     @media (min-width: 660px) {
-      padding: 0 20px;
       display: flex;
       justify-content: center;
+
+      padding: 0 20px;
     }
 
     @media (min-width: 1200px) {
@@ -35,13 +62,15 @@
 }
 
 .price__slider {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
+
+  margin: 0;
   margin-bottom: 38px;
+  padding: 0;
+
+  list-style: none;
 
   @media (min-width: 660px) {
     display: none;
@@ -49,14 +78,16 @@
 }
 
 .price__slider-item {
-  width: 280px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   flex-shrink: 0;
+  flex-wrap: wrap;
+
+  width: 280px;
 
   table {
     width: 100%;
+
     border-collapse: collapse;
 
     tr {
@@ -65,39 +96,48 @@
 
     th {
       position: relative;
+
       overflow: hidden;
+
+      padding: 12px 20px 30px;
+
       text-align: center;
-      background-color: #283645;
+
+      color: #ffffff;
+      border-top: none;
       border-right: 2px solid #ffffff;
       border-left: 2px solid #ffffff;
-      color: #ffffff;
-      padding: 12px 20px 30px;
-      border-top: none;
+      background-color: #283645;
 
       p {
+        margin: 0;
+
         text-transform: uppercase;
+
         font-size: 16px;
         font-weight: 700;
         line-height: 30px;
-        margin: 0;
       }
 
       span {
+        text-transform: uppercase;
+
         font-size: 18px;
         font-weight: 300;
-        text-transform: uppercase;
       }
     }
 
     td {
-      text-align: center;
       display: flex;
+      align-items: center;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
-      text-transform: uppercase;
+
       height: 59px;
       padding: 13px 17px 15px 20px;
+
+      text-align: center;
+      text-transform: uppercase;
 
       p {
         margin: 0;
@@ -110,16 +150,18 @@
   display: none;
 
   @media (min-width: 660px) {
-    border-collapse: collapse;
     display: block;
+
+    border-collapse: collapse;
   }
 
   td {
-    border: 2px solid #e5e5e5;
-    background-color: #ffffff;
     width: 155px;
     height: 46px;
     padding: 0 17px;
+
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
 
     @media (min-width: 1200px) {
       width: 237px;
@@ -130,15 +172,17 @@
 }
 
 .price__table-header {
-
   th:not(.hidden) {
+    position: relative;
+
+    overflow: hidden;
+
     height: 75px;
-    background-color: #283645;
+    padding: 10px 10px 9px;
+
     color: #ffffff;
     border: 2px solid #e5e5e5;
-    padding: 10px 10px 9px;
-    position: relative;
-    overflow: hidden;
+    background-color: #283645;
 
     @media (min-width: 1200px) {
       width: 240px;
@@ -149,12 +193,15 @@
 
 .price__name {
   margin: 0;
-  color: #fff;
+
   text-align: center;
+  text-transform: uppercase;
+
+  color: #fff;
+
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
-  text-transform: uppercase;
 
   @media (min-width: 1200px) {
     font-size: 18px;
@@ -163,12 +210,15 @@
 
 .price__value {
   margin: 0;
-  color: #fff;
+
   text-align: center;
+  text-transform: uppercase;
+
+  color: #fff;
+
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
-  text-transform: uppercase;
 
   @media (min-width: 1200px) {
     font-size: 24px;
@@ -177,6 +227,7 @@
 
 .price__row-name {
   color: #283645;
+
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;

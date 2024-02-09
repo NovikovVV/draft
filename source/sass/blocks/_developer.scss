@@ -1,13 +1,17 @@
 .developer {
-  margin: 0;
   display: flex;
   align-items: center;
-  gap: 15px;
+
+  margin: 0;
+
   color: #283645;
-  line-height: 18px;
+
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  line-height: 18px;
+
+  gap: 15px;
 
   @media (min-width: 1200px) {
     font-size: 18px;
@@ -25,6 +29,8 @@
   }
 
   svg {
+    transition: fill 300ms ease, opacity 300ms ease;
+
     fill: #d22856;
 
     &:hover {
@@ -32,8 +38,9 @@
     }
 
     &:active {
-      fill: #283645;
       opacity: 0.3;
+
+      fill: #283645;
     }
   }
 }

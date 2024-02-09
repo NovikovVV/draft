@@ -13,27 +13,32 @@
 
   .container {
     display: flex;
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+
     row-gap: 38px;
-    align-items: center;
 
     @media (min-width: 660px) {
       flex-direction: row;
-      gap: 0;
       justify-content: space-between;
+
+      gap: 0;
     }
   }
 
   .logo {
-    padding: 0;
     align-self: center;
+
+    padding: 0;
 
     @media (min-width: 660px) {
       align-self: flex-start;
     }
 
     svg {
+      transition: fill 300ms ease, opacity 300ms ease;
+
       fill: #283645;
 
       &:hover {
@@ -41,8 +46,9 @@
       }
 
       &:active {
-        fill: #283645;
         opacity: 0.3;
+
+        fill: #283645;
       }
     }
   }

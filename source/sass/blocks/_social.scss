@@ -1,10 +1,13 @@
 .social {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
   gap: 8px;
 
   @media (min-width: 660px) {
@@ -12,21 +15,26 @@
   }
 
   @media (min-width: 1200px) {
-    padding-top: 1px;
     margin-left: 8px;
+    padding-top: 1px;
+
     gap: 5px;
   }
 }
 
 .social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 54px;
   height: 54px;
+
+  transition: border-color 300ms ease, opacity 300ms ease;
+  text-align: center;
+
   border: 3px solid rgba(40,54,69, 0.1);
   border-radius: 50%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   &:hover {
     border-color: #283645;

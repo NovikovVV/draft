@@ -1,0 +1,33 @@
+.page-form {
+  .page-header {
+    background-size: cover;
+  }
+}
+
+.page-form__title {
+  margin: 0;
+  padding: 36px 30px;
+
+  text-align: center;
+
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+
+  @media (min-width: 660px) {
+    padding-top: 66px;
+    padding-bottom: 60px;
+
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 59px;
+    padding-right: 120px;
+    padding-bottom: 89px;
+    padding-left: 120px;
+  }
+}
