@@ -1,12 +1,12 @@
-.page-form {
+.page-catalog {
   .page-header {
     background-size: cover;
   }
 }
 
-.page-form__title {
+.page-catalog__title {
   margin: 0;
-  padding: 28px 30px 44px;
+  padding: 28px 30px 77px;
 
   text-align: center;
 
@@ -17,8 +17,8 @@
   line-height: 33px;
 
   @media (min-width: 660px) {
-    padding-top: 67px;
-    padding-bottom: 59px;
+    padding-top: 66px;
+    padding-bottom: 128px;
 
     font-size: 50px;
     line-height: 68px;
@@ -26,8 +26,8 @@
 
   @media (min-width: 1200px) {
     padding-top: 59px;
-    padding-right: 120px;
+    padding-right: 300px;
     padding-bottom: 89px;
-    padding-left: 120px;
+    padding-left: 300px;
   }
 }

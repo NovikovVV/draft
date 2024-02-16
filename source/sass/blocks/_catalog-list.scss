@@ -1,0 +1,157 @@
+.catalog-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+
+  row-gap: 20px;
+
+  @media (min-width: 620px) {
+    align-content: stretch;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+
+    column-gap: 20px;
+  }
+}
+
+.catalog-list__item {
+  display: flex;
+  align-items: center;
+  flex-basis: 280px;
+  flex-direction: column;
+
+  &--of-the-day {
+    flex-grow: 1;
+
+    .catalog-list__picture {
+      position: relative;
+
+      width: 100%;
+      height: 137px;
+
+      @media (min-width: 660px) {
+        height: 509px;
+      }
+
+      @media (min-width: 1200px) {
+        height: 506px;
+      }
+
+      &::before {
+        position: absolute;
+        top: 0;
+        right: 20px;
+
+        display: block;
+
+        width: 140px;
+        height: 36px;
+        padding: 6px 10px;
+
+        content: "ПАНОРАМА ДНЯ";
+        text-align: center;
+
+        color: #ffffff;
+        background-color: #d22856;
+
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 24px;
+
+        @media (min-width: 660px) {
+          top: 57px;
+        }
+
+        @media (min-width: 1200px) {
+          top: 54px;
+          right: 130px;
+        }
+      }
+    }
+
+    .catalog-list__item-text {
+      width: calc(100vw - 40px);
+      max-width: 940px;
+    }
+  }
+}
+
+.catalog-list__picture {
+  width: 280px;
+}
+
+.catalog-list__image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.catalog-list__item-text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-wrap: wrap;
+
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 18px;
+  padding-right: 10px;
+  padding-bottom: 17px;
+  padding-left: 16px;
+
+  background-color: #f2f2f2;
+}
+
+.catalog-list__item-author {
+  text-align: center;
+
+  color: #283645;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.catalog-list__item-time {
+  text-transform: uppercase;
+
+  color: #283645;
+
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.catalog-list__item-comment {
+  margin-bottom: 11px;
+}
+
+.catalog-list__item-like {
+  margin-top: auto;
+}
+
+.catalog-list__item-like-icon {
+  margin-right: 15px;
+}
+
+.catalog-list__item-like-counter-text {
+  text-transform: uppercase;
+
+  color: #d22856;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+}

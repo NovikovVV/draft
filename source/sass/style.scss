@@ -1,5 +1,6 @@
 @use 'global/_global';
 @use 'blocks/_container';
+@use 'blocks/_visually-hidden';
 @use 'blocks/_navigation';
 @use 'blocks/_page-header';
 @use 'blocks/_logo';
@@ -19,3 +20,6 @@
 @use 'blocks/_page-form';
 @use 'blocks/_form';
 @use 'blocks/_main-form';
+@use 'blocks/_page-catalog';
+@use 'blocks/_catalog';
+@use 'blocks/_catalog-list';
