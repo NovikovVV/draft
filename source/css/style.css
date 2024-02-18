@@ -445,6 +445,9 @@ body {
 .features {
   background-color: #f2f2f2;
 }
+.features p {
+  margin: 0;
+}
 
 .features__wrapper {
   min-width: 320px;
@@ -1521,10 +1524,10 @@ body {
 
 .desktop-controls {
   position: absolute;
-  top: -194px;
+  top: 213px;
   display: none;
   justify-content: space-between;
-  width: 100%;
+  width: 940px;
   margin: 0;
   padding: 0;
   list-style: none;
