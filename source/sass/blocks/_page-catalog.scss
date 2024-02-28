@@ -2,6 +2,19 @@
   .page-header {
     background-size: cover;
   }
+
+  .page-footer {
+    padding-top: 40px;
+
+    @media (min-width: 660px) {
+      padding-top: 36px;
+    }
+
+    @media (min-width: 1200px) {
+      padding-top: 98px;
+      padding-bottom: 72px;
+    }
+  }
 }
 
 .page-catalog__title {
