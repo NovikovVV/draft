@@ -4,7 +4,7 @@
 
   margin: 0;
 
-  color: #283645;
+  color: var(--midnight);
 
   font-size: 14px;
   font-weight: 400;
@@ -31,16 +31,16 @@
   svg {
     transition: fill 300ms ease, opacity 300ms ease;
 
-    fill: #d22856;
+    fill: var(--pink);
 
     &:hover {
-      fill: #283645;
+      fill: var(--midnight);
     }
 
     &:active {
       opacity: 0.3;
 
-      fill: #283645;
+      fill: var(--midnight);
     }
   }
 }

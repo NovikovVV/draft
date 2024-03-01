@@ -1,5 +1,5 @@
 .filter {
-  background-color: #f2f2f2;
+  background-color: var(--light-gray);
 }
 
 .filter__title {
@@ -8,8 +8,8 @@
 
   text-align: center;
 
-  color: #283645;
-  background-color: #ffffff;
+  color: var(--midnight);
+  background-color: var(--white);
 
   font-size: 14px;
   font-weight: 400;
@@ -128,7 +128,7 @@
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
 
     svg {
-      fill: #d22856;
+      fill: var(--pink);
     }
 
   }
@@ -143,7 +143,7 @@
 
   &--active {
     svg {
-      fill: #d22856;
+      fill: var(--pink);
     }
   }
 }
@@ -227,7 +227,7 @@
   height: 2px;
   margin: 0 auto;
 
-  background-color: #283645;
+  background-color: var(--midnight);
 
   @media (min-width: 660px) {
     display: block;
@@ -260,13 +260,13 @@
 
   transition: background-color 300ms ease;
 
-  border: 2px solid #d22856;
+  border: 2px solid var(--pink);
   border-radius: 50%;
 
   &:hover {
     cursor: pointer;
 
-    background-color: #d22856;
+    background-color: var(--pink);
   }
 }
 
@@ -308,8 +308,8 @@
     border-color 300ms ease;
   text-align: center;
 
-  color: #d22856;
-  border: 3px solid #d22856;
+  color: var(--pink);
+  border: 3px solid var(--pink);
   border-radius: 30px;
 
   font-size: 18px;
@@ -328,8 +328,8 @@
 .filter__buttons-item--submit {
 
   &:hover {
-    color: #ffffff;
-    background-color: #d22856;
+    color: var(--white);
+    background-color: var(--pink);
   }
 
   &:active {

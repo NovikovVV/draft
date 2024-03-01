@@ -1,23 +1,28 @@
 .navigation {
 
   .container {
-    min-width: 320px;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.3);
     position: relative;
 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    min-width: 320px;
+    padding: 0;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
     &--open {
-      background-color: #283645;
+      background-color: var(--midnight);
     };
 
     @media (min-width: 1200px) {
-      justify-content: space-between;
-      padding: 0 130px;
-      background-color: unset;
       flex-direction: row;
+      justify-content: space-between;
+
+      padding: 0 130px;
+
+      background-color: unset;
     }
   }
 

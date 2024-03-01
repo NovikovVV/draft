@@ -1,0 +1,156 @@
+.modals {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  &--hidden {
+    display: none;
+  }
+
+  &--active {
+    display: block;
+  }
+}
+
+.modals__item {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+
+  display: none;
+
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 38px;
+  padding-bottom: 52px;
+
+  background-color: var(--white);
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  &--success {
+    padding-bottom: 0;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  &--active {
+    display: block;
+  }
+
+  @media (min-width: 660px) {
+    width: 460px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 780px;
+    padding-bottom: 0;
+  }
+}
+
+.modals__title {
+  margin: 0;
+  margin-bottom: 24px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  text-align: center;
+
+  color: var(--black);
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+
+  @media (min-width: 660px) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modals__text {
+  margin: 0;
+  margin-bottom: 45px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  text-align: center;
+
+  color: var(--midnight);
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @media (min-width: 660px) {
+    font-size: 18px;
+  }
+}
+
+.modals__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: 1200px) {
+    padding-top: 54px;
+    padding-bottom: 54px;
+
+    background-color: var(--light-gray);
+  }
+}
+
+.modals__item--success {
+  .modals__wrapper {
+    padding-top: 54px;
+    padding-bottom: 54px;
+
+    background-color: var(--light-gray);
+  }
+}
+
+.modals__button {
+  display: block;
+
+  width: 100%;
+  max-width: 300px;
+  height: 59px;
+  padding: 10px 20px;
+
+  transition: background-color 300ms ease, color 300ms ease;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--white);
+  border: none;
+  border-radius: 1px;
+  background-color: #2aab6d;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+
+  &:hover {
+    cursor: pointer;
+
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #1c9b5e;
+  }
+
+  &:disabled {
+    cursor: auto;
+
+    background-color: var(--mercury);
+  }
+}

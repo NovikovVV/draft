@@ -80,8 +80,8 @@
       content: "ПАНОРАМА ДНЯ";
       text-align: center;
 
-      color: #ffffff;
-      background-color: #d22856;
+      color: var(--white);
+      background-color: var(--pink);
 
       font-family: "Open Sans", sans-serif;
       font-size: 12px;
@@ -185,7 +185,7 @@
   padding-bottom: 18px;
   padding-left: 18px;
 
-  background: #f2f2f2;
+  background: var(--light-gray);
 
   @media (min-width: 660px) {
     display: flex;
@@ -200,7 +200,7 @@
 }
 
 .catalog-list__item-author {
-  color: #283645;
+  color: var(--midnight);
 
   font-size: 14px;
   font-weight: 700;
@@ -210,7 +210,7 @@
 .catalog-list__item-time {
   text-transform: uppercase;
 
-  color: #283645;
+  color: var(--midnight);
 
   font-size: 12px;
   font-weight: 300;
@@ -220,7 +220,7 @@
 .catalog-list__item-comment {
   margin-bottom: 11px;
 
-  color: #283645;
+  color: var(--midnight);
 
   font-size: 14px;
   font-weight: 400;
@@ -255,7 +255,7 @@
 .catalog-list__item-like-counter-text {
   text-transform: uppercase;
 
-  color: #d22856;
+  color: var(--pink);
 
   font-size: 12px;
   font-weight: 400;

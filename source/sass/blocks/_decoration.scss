@@ -2,44 +2,53 @@
   position: relative;
 
   &::after {
-    content: "";
+    position: absolute;
+    bottom: -24px;
 
     display: block;
-    position: absolute;
+
     width: 0;
     height: 0;
-    bottom: -24px;
-    border-top: 25px solid #ffffff;
+
+    content: "";
+
+    border-top: 25px solid var(--white);
     border-right: calc(100vw - 17px) solid transparent;
 
     @media (min-width: 660px) {
       bottom: -44px;
-      border-top: 45px solid #ffffff;
+
+      border-top: 45px solid var(--white);
     }
 
     @media (min-width: 1200px) {
       bottom: -139px;
-      border-top: 140px solid #ffffff;
+
+      border-top: 140px solid var(--white);
     }
   }
 }
 
 .decoration--hit {
   &::before {
+    position: absolute;
+    top: 18px;
+    left: -112px;
+
+    width: 100%;
+    height: 23px;
+
     content: "ХИТ";
+    transform: rotate(-45deg);
     text-align: center;
-    color: #fff;
     text-align: center;
+
+    color: var(--white);
+    background-color: var(--pink);
+
     font-family: "Open Sans";
     font-size: 14px;
     font-weight: 400;
-    position: absolute;
-    width: 100%;
-    height: 23px;
-    left: -112px;
-    top: 18px;
-    background-color: #d22856;
-    transform: rotate(-45deg);
 
     @media (min-width: 660px) {
       top: 10px;
@@ -47,8 +56,8 @@
     }
 
     @media (min-width: 1200px) {
-      left: -86px;
       top: 18px;
+      left: -86px;
     }
   }
 }

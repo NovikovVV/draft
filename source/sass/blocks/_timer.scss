@@ -6,7 +6,7 @@
   }
 
   @media (min-width: 1200px) {
-    background-color: #f2f2f2;
+    background-color: var(--light-gray);
   }
 
   .container {
@@ -54,7 +54,7 @@
   @media (min-width: 660px) {
     text-align: left;
 
-    color: #000;
+    color: var(--black);
 
     font-size: 30px;
     font-weight: 700;
@@ -64,7 +64,7 @@
   @media (min-width: 1200px) {
     margin-bottom: 25px;
 
-    color: #000;
+    color: var(--black);
 
     line-height: 30px;
   }
@@ -75,7 +75,7 @@
   margin-bottom: 10px;
   padding-right: 5px;
 
-  color: #283645;
+  color: var(--midnight);
 
   font-family: "Open Sans";
   font-size: 14px;
@@ -85,7 +85,7 @@
   @media (min-width: 1200px) {
     margin-bottom: 30px;
 
-    color: #283645;
+    color: var(--midnight);
 
     font-size: 18px;
     line-height: 30px;
@@ -103,7 +103,7 @@
 .timer__link {
   transition: color 300ms ease, opacity 300ms ease;
 
-  color: #d22856;
+  color: var(--pink);
 
   font-size: 14px;
   font-weight: 400;
@@ -112,20 +112,20 @@
   text-decoration-line: underline;
 
   @media (min-width: 1200px) {
-    color: #d22856;
+    color: var(--pink);
 
     font-size: 18px;
     line-height: 30px;
   }
 
   &:hover {
-    color: #283645;
+    color: var(--midnight);
   }
 
   &:active {
     text-decoration: none;
 
     opacity: 0.3;
-    color: #283645;
+    color: var(--midnight);
   }
 }

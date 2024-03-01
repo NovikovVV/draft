@@ -28,7 +28,7 @@
 
   text-align: center;
 
-  color: #283645;
+  color: var(--midnight);
 
   font-size: 24px;
   font-weight: 300;
@@ -101,7 +101,7 @@
 .contacts__text {
   text-align: center;
 
-  color: #283645;
+  color: var(--midnight);
 
   font-size: 18px;
   font-weight: 700;
@@ -123,7 +123,7 @@
   text-align: center;
   text-decoration: none;
 
-  color: #d22856;
+  color: var(--pink);
 
   font-size: 24px;
   font-weight: 300;
@@ -141,11 +141,11 @@
     transition: opacity 300ms ease;
 
     opacity: 0;
-    background-color: #283645;
+    background-color: var(--midnight);
   }
 
   &[href]:hover {
-    color: #283645;
+    color: var(--midnight);
   }
 
   &[href]:active {
@@ -163,7 +163,7 @@
   &[href]:not(:hover) {
     transition: color 300ms ease;
 
-    color: #d22856;
+    color: var(--pink);
   }
 }
 
@@ -182,18 +182,18 @@
 
     content: "";
 
-    border-top: 34px solid #ffffff;
+    border-top: 34px solid var(--white);
     border-right: 160px solid transparent;
     border-left: 160px solid transparent;
 
     @media (min-width: 660px) {
-      border-top: 70px solid #ffffff;
+      border-top: 70px solid var(--white);
       border-right: 330px solid transparent;
       border-left: 330px solid transparent;
     }
 
     @media (min-width: 1200px) {
-      border-top: 105px solid #ffffff;
+      border-top: 105px solid var(--white);
       border-right: 600px solid transparent;
       border-left: 600px solid transparent;
     }

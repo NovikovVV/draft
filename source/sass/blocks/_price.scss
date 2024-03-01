@@ -4,7 +4,7 @@
   padding-top: 99px;
   padding-bottom: 46px;
 
-  background-color: #f2f2f2;
+  background-color: var(--light-gray);
 
   @media (min-width: 660px) {
     padding-top: 100px;
@@ -27,15 +27,15 @@
 
     content: "";
 
-    border-top: 25px solid #ffffff;
+    border-top: 25px solid var(--white);
     border-right: calc(100vw - 17px) solid transparent;
 
     @media (min-width: 660px) {
-      border-top: 45px solid #ffffff;
+      border-top: 45px solid var(--white);
     }
 
     @media (min-width: 1200px) {
-      border-top: 140px solid #ffffff;
+      border-top: 140px solid var(--white);
     }
   }
 
@@ -91,7 +91,7 @@
     border-collapse: collapse;
 
     tr {
-      border: 2px solid #e5e5e5;
+      border: 2px solid var(--mercury);
     }
 
     th {
@@ -103,11 +103,11 @@
 
       text-align: center;
 
-      color: #ffffff;
+      color: var(--white);
       border-top: none;
-      border-right: 2px solid #ffffff;
-      border-left: 2px solid #ffffff;
-      background-color: #283645;
+      border-right: 2px solid var(--white);
+      border-left: 2px solid var(--white);
+      background-color: var(--midnight);
 
       p {
         margin: 0;
@@ -160,8 +160,8 @@
     height: 46px;
     padding: 0 17px;
 
-    border: 2px solid #e5e5e5;
-    background-color: #ffffff;
+    border: 2px solid var(--mercury);
+    background-color: var(--white);
 
     @media (min-width: 1200px) {
       width: 237px;
@@ -180,9 +180,9 @@
     height: 75px;
     padding: 10px 10px 9px;
 
-    color: #ffffff;
-    border: 2px solid #e5e5e5;
-    background-color: #283645;
+    color: var(--white);
+    border: 2px solid var(--mercury);
+    background-color: var(--midnight);
 
     @media (min-width: 1200px) {
       width: 240px;
@@ -197,7 +197,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #fff;
+  color: var(--white);
 
   font-size: 16px;
   font-weight: 700;
@@ -214,7 +214,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #fff;
+  color: var(--white);
 
   font-size: 18px;
   font-weight: 300;
@@ -226,7 +226,7 @@
 }
 
 .price__row-name {
-  color: #283645;
+  color: var(--midnight);
 
   font-size: 14px;
   font-weight: 400;

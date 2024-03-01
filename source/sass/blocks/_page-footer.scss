@@ -39,16 +39,16 @@
     svg {
       transition: fill 300ms ease, opacity 300ms ease;
 
-      fill: #283645;
+      fill: var(--midnight);
 
       &:hover {
-        fill: #d22856;
+        fill: var(--pink);
       }
 
       &:active {
         opacity: 0.3;
 
-        fill: #283645;
+        fill: var(--midnight);
       }
     }
   }

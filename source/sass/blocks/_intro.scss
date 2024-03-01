@@ -54,7 +54,7 @@
 
   text-align: center;
 
-  color: #fff;
+  color: var(--white);
 
   font-size: 24px;
   font-weight: 300;
@@ -97,8 +97,8 @@
   text-align: center;
   text-decoration: none;
 
-  color: #fff;
-  border: 1px solid #ffffff;
+  color: var(--white);
+  border: 1px solid var(--white);
   border-radius: 29px;
 
   font-size: 18px;
@@ -106,8 +106,8 @@
   line-height: 18px;
 
   &:hover {
-    color: #d22856;
-    background-color: #ffffff;
+    color: var(--pink);
+    background-color: var(--white);
   }
 
   &:active {
@@ -164,7 +164,7 @@
 
   text-align: center;
 
-  color: #fff;
+  color: var(--white);
 
   font-size: 14px;
   font-weight: 300;
