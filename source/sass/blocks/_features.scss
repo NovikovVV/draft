@@ -142,7 +142,7 @@
 
       content: "";
 
-      background: url('../img/feature-desktop-1.webp') center no-repeat;
+      background: url("../img/feature-desktop-1.webp") center no-repeat;
     }
   }
 }
@@ -150,7 +150,7 @@
 .features__item--two {
   @media (min-width: 1200px) {
     &::before {
-      background: url('../img/feature-desktop-2.webp') center no-repeat;
+      background: url("../img/feature-desktop-2.webp") center no-repeat;
     }
   }
 }
@@ -158,7 +158,7 @@
 .features__item--three {
   @media (min-width: 1200px) {
     &::before {
-      background: url('../img/feature-desktop-3.webp') center no-repeat;
+      background: url("../img/feature-desktop-3.webp") center no-repeat;
     }
   }
 }

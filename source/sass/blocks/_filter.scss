@@ -120,7 +120,6 @@
 }
 
 .filter__settings-item {
-
   @media (min-width: 660px) {
     display: flex;
     align-items: center;
@@ -133,7 +132,6 @@
     svg {
       fill: var(--pink);
     }
-
   }
 
   &:first-of-type {
@@ -307,8 +305,7 @@
   height: 55px;
   padding: 10px 20px;
 
-  transition: color 300ms ease, background-color 300ms ease,
-    border-color 300ms ease;
+  transition: color 300ms ease, background-color 300ms ease, border-color 300ms ease;
   text-align: center;
 
   color: var(--pink);
@@ -329,7 +326,6 @@
 }
 
 .filter__buttons-item--submit {
-
   &:hover {
     color: var(--white);
     background-color: var(--pink);

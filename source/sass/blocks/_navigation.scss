@@ -1,5 +1,4 @@
 .navigation {
-
   .container {
     position: relative;
 
@@ -14,7 +13,7 @@
 
     &--open {
       background-color: var(--midnight);
-    };
+    }
 
     @media (min-width: 1200px) {
       flex-direction: row;

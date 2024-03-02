@@ -112,6 +112,7 @@ body {
 }
 .logo svg {
   transition: fill 300ms ease, opacity 300ms ease;
+  fill: var(--white);
 }
 .logo:hover svg {
   fill: var(--pink);
@@ -133,9 +134,6 @@ body {
     padding-left: 0;
     outline-offset: -2px;
   }
-}
-.logo svg {
-  fill: var(--white);
 }
 
 @media (min-width: 660px) {
@@ -721,7 +719,7 @@ body {
   margin-bottom: 10px;
   padding-right: 5px;
   color: var(--midnight);
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -1405,7 +1403,6 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  line-height: 18px;
   gap: 15px;
 }
 @media (min-width: 1200px) {
@@ -1471,10 +1468,9 @@ body {
   content: "ХИТ";
   transform: rotate(-45deg);
   text-align: center;
-  text-align: center;
   color: var(--white);
   background-color: var(--pink);
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
@@ -1618,7 +1614,6 @@ body {
 }
 
 .form__title {
-  margin: 0;
   padding: 0 20px;
   max-width: 936px;
   margin: 0 auto;
@@ -2157,7 +2152,6 @@ input[type=radio]:focus-visible + .main-form__radio {
   transition: border-color 300ms ease, outline 300ms ease;
   border: 2px solid var(--mercury);
   border-radius: 1px;
-  border-radius: 1px;
   font-family: inherit;
   font-size: 18px;
   line-height: 30px;
@@ -2512,6 +2506,7 @@ input[type=radio]:focus-visible + .main-form__radio {
   font-weight: 400;
   line-height: 24px;
 }
+
 .catalog-list__item-like {
   display: flex;
 }
@@ -2898,9 +2893,6 @@ input[type=radio]:focus-visible + .main-form__radio {
   background-color: var(--white);
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
-.modals__item--success {
-  padding-bottom: 0;
-}
 .modals__item--hidden {
   display: none;
 }
@@ -2969,6 +2961,9 @@ input[type=radio]:focus-visible + .main-form__radio {
   }
 }
 
+.modals__item--success {
+  padding-bottom: 0;
+}
 .modals__item--success .modals__wrapper {
   padding-top: 54px;
   padding-bottom: 54px;

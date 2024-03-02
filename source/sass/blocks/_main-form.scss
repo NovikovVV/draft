@@ -26,11 +26,11 @@
     column-gap: 70px;
     row-gap: 60px;
     grid-template-areas:
-    "user-data app"
-    "contacts contacts"
-    "achievements achievements"
-    "emotions emotions"
-    "submit footnote";
+      "user-data app"
+      "contacts contacts"
+      "achievements achievements"
+      "emotions emotions"
+      "submit footnote";
   }
 }
 
@@ -192,6 +192,7 @@
 
       &:hover {
         cursor: pointer;
+
         svg {
           transition: transform 300ms ease;
           transform: scale(1.2);
@@ -540,7 +541,6 @@ input[type="radio"]:focus-visible + .main-form__radio {
   transition: border-color 300ms ease, outline 300ms ease;
 
   border: 2px solid var(--mercury);
-  border-radius: 1px;
   border-radius: 1px;
 
   font-family: inherit;
