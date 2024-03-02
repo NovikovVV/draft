@@ -498,11 +498,14 @@ body {
     font-size: 50px;
   }
 }
-.features__title div:first-child {
+.features__title span {
+  display: block;
+}
+.features__title span:first-child {
   margin-bottom: 30px;
 }
 @media (min-width: 660px) {
-  .features__title div:first-child {
+  .features__title span:first-child {
     margin-bottom: 0;
   }
 }
