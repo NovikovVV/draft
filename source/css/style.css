@@ -2574,6 +2574,9 @@ input[type=radio]:focus-visible + .main-form__radio {
     padding-bottom: 67px;
   }
 }
+.filter__title span {
+  display: block;
+}
 
 .filter__container {
   display: grid;
