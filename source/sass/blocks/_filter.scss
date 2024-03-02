@@ -121,6 +121,10 @@
 
 .filter__settings-item {
   @media (max-width: 659px) {
+    svg {
+      transition: fill 300ms ease, opacity 300ms ease;
+    }
+
     &:hover:not(.filter__settings-item--active) {
       cursor: pointer;
 

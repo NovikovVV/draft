@@ -2655,6 +2655,9 @@ input[type=radio]:focus-visible + .main-form__radio {
 }
 
 @media (max-width: 659px) {
+  .filter__settings-item svg {
+    transition: fill 300ms ease, opacity 300ms ease;
+  }
   .filter__settings-item:hover:not(.filter__settings-item--active) {
     cursor: pointer;
   }
