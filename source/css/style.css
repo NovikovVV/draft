@@ -1572,8 +1572,9 @@ body {
 }
 
 .page-form__title {
-  margin: 0;
+  margin: 0 auto;
   padding: 28px 30px 44px;
+  max-width: 936px;
   text-align: center;
   color: var(--white);
   font-size: 24px;
@@ -1591,9 +1592,9 @@ body {
 @media (min-width: 1200px) {
   .page-form__title {
     padding-top: 59px;
-    padding-right: 120px;
+    padding-right: 90px;
     padding-bottom: 89px;
-    padding-left: 120px;
+    padding-left: 90px;
   }
 }
 
@@ -1616,6 +1617,8 @@ body {
 .form__title {
   margin: 0;
   padding: 0 20px;
+  max-width: 936px;
+  margin: 0 auto;
   text-align: center;
   color: var(--midnight);
   font-size: 14px;
@@ -1644,8 +1647,8 @@ body {
 }
 @media (min-width: 1200px) {
   .form__title {
-    padding-right: 220px;
-    padding-left: 220px;
+    padding-right: 90px;
+    padding-left: 90px;
   }
 }
 

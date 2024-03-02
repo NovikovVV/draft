@@ -5,8 +5,9 @@
 }
 
 .page-form__title {
-  margin: 0;
+  margin: 0 auto;
   padding: 28px 30px 44px;
+  max-width: 936px;
 
   text-align: center;
 
@@ -26,8 +27,8 @@
 
   @media (min-width: 1200px) {
     padding-top: 59px;
-    padding-right: 120px;
+    padding-right: 90px;
     padding-bottom: 89px;
-    padding-left: 120px;
+    padding-left: 90px;
   }
 }
