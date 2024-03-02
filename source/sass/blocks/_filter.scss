@@ -120,6 +120,22 @@
 }
 
 .filter__settings-item {
+  @media (max-width: 659px) {
+    &:hover:not(.filter__settings-item--active) {
+      cursor: pointer;
+
+      svg {
+        fill: #283645;
+      }
+    }
+
+    &:active:not(.filter__settings-item--active) {
+      svg {
+        opacity: 0.5;
+      }
+    }
+  }
+
   @media (min-width: 660px) {
     display: flex;
     align-items: center;

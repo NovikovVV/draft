@@ -2654,6 +2654,17 @@ input[type=radio]:focus-visible + .main-form__radio {
   }
 }
 
+@media (max-width: 659px) {
+  .filter__settings-item:hover:not(.filter__settings-item--active) {
+    cursor: pointer;
+  }
+  .filter__settings-item:hover:not(.filter__settings-item--active) svg {
+    fill: #283645;
+  }
+  .filter__settings-item:active:not(.filter__settings-item--active) svg {
+    opacity: 0.5;
+  }
+}
 @media (min-width: 660px) {
   .filter__settings-item {
     display: flex;
